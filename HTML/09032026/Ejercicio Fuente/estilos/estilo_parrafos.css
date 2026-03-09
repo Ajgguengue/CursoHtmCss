@@ -1,0 +1,165 @@
+@import url(internos.css);
+
+
+p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+
+main h1,
+h3 {
+    text-align: center;
+    font-family: calibri, 'sans serif';
+    color: #D74B14;
+}
+
+#p1 {
+    color: #D7143E;
+    font-family: Verdana, 'sans serif';
+}
+
+/* El segundo párrafo con tipografía segura Didot (serif). */
+
+#p2 {
+    color: #D7AD14;
+    font-family: didot, 'sans serif';
+}
+
+/* • El tercer párrafo con tipografía segura FreeMono (monospace).
+ */
+
+#p3 {
+    color: #0c0666;
+    font-family: 'fmono', serif;
+}
+
+/* El cuarto párrafo con tipografía importada desde Google Fonts Roboto 400 dentro de la
+etiqueta <style>. */
+#p4 {
+    color: #D7143E;
+    font-family: roboto, 'comic sans ms';
+}
+
+/* El quinto párrafo con tipografía descargada de Google Fonts Akronim y llamada con la
+instrucción @font-face */
+#p5 {
+    color: #D74B14;
+    font-family: 'Akronim', serif;
+}
+
+
+/* El sexto párrafo con tipografía importada desde Google Fonts Montserrat 400 mediante
+un <link> */
+
+#p6 {
+    color: #0c0666;
+    font-family: 'Montserrat', 'comic sans ms';
+    font-size: 1.5em;
+}
+
+/* El séptimo párrafo con tipografía segura Comic Sans (cursive). */
+#p7 {
+    color: #D7AD14;
+    font-family: 'comic sans ms', cursive;
+}
+
+/* • El octavo párrafo con tipografía segura Palatino, y en caso de que no esté instalada en
+el sistema, con Book Antiqua (serif).
+ */
+#p8 {
+    color: #D7143E;
+    font-family: Palatino, 'Book Antiqua', serif;
+}
+
+/* El noveno párrafo con tipografía segura Arial, y en caso de que no esté instalada en el
+sistema, Helvética (sans-serif). */
+#p9 {
+    color: #D74B14;
+    font-family: Arial, Helvetica;
+}
+
+/* • El décimo párrafo con tipografía segura Courier New, y en caso de que no esté instalada
+en el sistema Consolas (monospace) */
+#p10 {
+    color: #0c0666;
+    font-family: 'Courier New', Consolas, monospace;
+}
+
+#p11 {
+    color: #D7143E;
+    font-family: 'EarwigFactory', serif;
+
+}
+
+/* • El décimo segundo con tipografía segura genérica a tu elección.
+ */
+
+#p12 {
+    color: #D7AD14;
+    font-family: 'impact', 'sans serif';
+    font-size: 1em;
+}
+
+/* • El décimo tercero con la tipografía segura que quieras de tipo sans-serif.
+ */
+#p13 {
+    color: #0c0666;
+    font-family: 'arial', 'sans serif';
+    font-size: 1.5em;
+}
+
+/* • El décimo cuarto con 3 tipografías seguras que quieras de tipo serif.
+ */
+
+#p14 {
+    color: #D74B14;
+    font-family: 'verdana', 'arial', 'sans serif';
+    font-size: 0.7em;
+}
+
+#p15 {
+    color: #D7143E;
+    font-family: 'Homemade Apple', 'comic sans ms';
+    font-size: 1em;
+}
+
+/*  */
+
+#p16 {
+    color: #D7AD14;
+    font-family: 'casuals', 'Times New Roman' ;
+    font-size: 1.5em;
+}
+
+/* google fonts desde link */
+#p17 {
+    color: #0c0666;
+    font-family: 'Bagel Fat One', 'comic sans ms';
+    font-size: 1.5em;
+}
