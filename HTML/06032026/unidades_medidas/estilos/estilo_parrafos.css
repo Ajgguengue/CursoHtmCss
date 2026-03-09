@@ -1,0 +1,89 @@
+@import url(internos.css);
+
+
+p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+/* laa division 1 */
+#div1 p{
+    color: #D7143E;
+    
+}
+
+/* el párrafo primero EM*/
+#div1 > #primeroEM {
+ 
+    font-size: 16px;
+}
+
+/* el párrafo segundo EM */
+#div1 > #segundoEM {
+ 
+    font-size: 32px;
+}
+/* el párrafo tercero EM */
+#div1 > #terceroEM {
+ 
+    font-size: 8px;
+}
+
+
+/* margen */
+/* #div1 p{
+    margin-left: 1em;
+    border: 1px dashed #D7143E;
+} */
+
+#primeroEM {
+    margin-left: 1em;
+    border: 1px dashed #D7143E;
+}
+
+#segundoEM {
+    margin-left: 0.5em;
+    border: 1px dashed #D7143E;
+}
+
+#terceroEM {
+    margin-left: 2em;
+    border: 1px dashed #D7143E;
+}
+
+#div2 p[id$="PT"] {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 1em;
+}
+
+h3 {
+    color: rgb(247, 169, 1);
+    font-size: 16px;
+    margin-left: 1em;
+}

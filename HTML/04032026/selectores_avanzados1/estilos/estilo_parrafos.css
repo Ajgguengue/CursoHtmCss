@@ -1,0 +1,308 @@
+@import url(internos.css);
+
+
+p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #00ff00;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #ff8800;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+-#lista1 li:first-child {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+-li:first-child {
+    color: blue;
+    font-weight: bold;
+
+}
+
+-#lista2 li:first-of-type {
+    color: #5ba0e2;
+    font-weight: bold;
+    font-style: italic
+}
+
+-#lista1 li:last-of-type {
+    color: orange;
+    font-weight: bold;
+
+}
+
+
+/* 
+
+Pseudoclases (:): Se añaden al selector para especificar un estado especial del elemento.
+
+Ejemplo: a:hover { color: red; } (Cambia estilo al pasar el ratón).
+Ejemplos comunes: :link, :visited, :active, :checked, :not().
+
+Pseudoelementos (::): Se usan para dar estilo a partes específicas o crear contenido nuevo.
+
+Ejemplo: p::before { content: "» "; } (Añade contenido antes del párrafo).
+Ejemplos comunes: ::before, ::after, ::first-line, ::selection. 
+
+
+Resumen de Diferencias:
+: (un dos puntos): Estados (:hover, :focus).
+:: (dos dos puntos): Partes de elementos (::before, ::after).
+
+
+*/
+
+/* Aplica el color lima al quinto elemento de tipo <li> de la primera lista */
+-#lista1 li:nth-of-type(5) {
+    color: lime;
+    font-weight: bold;
+}
+
+/* Aplica el color lima a los elementos pares de tipo <li> de la primera lista */
+-#lista1 li:nth-of-type(even) {
+    color: lime;
+    font-weight: bold;
+}
+
+-#lista1 li:nth-of-type(odd) {
+    color: lime;
+    font-weight: bold;
+}
+
+/* Aplica el color verde al tercer elemento de la segunda lista. */
+-#lista2 li:nth-of-type(3) {
+    color: green;
+    font-weight: bold;
+}
+
+/* Aplica tamaño 18 a los elementos pares de la segunda lista */
+-#lista2 li:nth-of-type(even) {
+    color: green;
+    font-size: 18pt;
+}
+
+/* Subraya todos los elementos impares de la lista 2. */
+-#lista2 li:nth-of-type(odd) {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Aplica el color #864cda al 2º elemento de tipo párrafo del primer contenedor. */
+
+-#div1 p:nth-of-type(2) {
+    color: #864cda;
+    font-weight: bold;
+}
+
+/* Aplica a los elementos de tipo párrafo del primer contenedor los siguientes estilos: color de fuente
+lima, color de fondo negro y borde interno de 5 pixeles */
+-#div1 p:nth-of-type(1) {
+    color: lime;
+    font-weight: bold;
+    background-color: black;
+    border: 6px dashed #da1c1c;
+}
+
+/* Aplica al último elemento de tipo párrafo del primer contenedor los siguientes estilos: color de
+fuente lima, color de fondo negro y borde interno de 5 pixeles. */
+
+-#div1 p:last-of-type {
+    color: lime;
+    font-weight: bold;
+    background-color: black;
+    border: 6px dashed #da1c1c;
+}
+
+/* Invierte los colores fondo-primer plano del primer elemento del primer contenedor */
+-#div1 :nth-child(1) {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/* Aplica el color de fondo #da4cd8 al 4º elemento empezando por el final de ambas listas */
+-li:nth-last-of-type(4) {
+    background-color: #da4cd8;
+
+}
+
+/* Aplica un color de fondo naranja al elemento de tipo lista número 2 empezando por el final de la
+lista */
+
+-#lista2 li:nth-last-of-type(2) {
+    background-color: rgb(236, 197, 125);
+
+}
+
+/* los rojos */
+/* primera letra en roto PAGINA 8 DEL TEXTO CSS3.PDF */
+
+-#div1 p:first-letter {
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    float: left;
+    /* Hace que el texto fluya alrededor */
+    line-height: 1;
+    margin-right: 5px;
+    /* Espacio derecho */
+    margin-top: 1px;
+    /* Ajuste superior si es necesario */
+
+
+}
+-p::first-letter {
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    float: left;
+    /* Hace que el texto fluya alrededor */
+    line-height: 1;
+    margin-right: 5px;
+    /* Espacio derecho */
+    margin-top: 1px;
+    /* Ajuste superior si es necesario */
+}
+
+-#div2 p:first-letter {
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    float: left;
+    /* Hace que el texto fluya alrededor */
+    line-height: 1;
+    margin-right: 5px;
+    /* Espacio derecho */
+    margin-top: 1px;
+    /* Ajuste superior si es necesario */
+
+
+}
+
+-div p::first-line {
+    background-color: rgb(158, 158, 238);
+}
+
+
+
+
+/* colocar una imagen al final del h1 */
+
+div h1::after {
+    
+    content: url(../imagen/pulgar.png);
+
+}
+
+div h1::before {
+    
+    content: url(../imagen/3-pillars_0.png);
+
+}
+
+/* 5. Incluye al principio de los párrafos del primer contenedor la frase El científico. 
+  si fuera solo al primero usar first-of-type*/
+
+-#div1 p::before {
+    content: "El cientifico";
+}
+
+
+/* 23. La lista que tenga un título que se muestre con el fondo naranja. 
+  con el simbolo  */
+
+-ul[title="listado primero"] {
+    font-family: Verdana;
+    background-color: rgb(248, 140, 15);
+}
+
+/* La lista que tenga como valor en el título un texto que empiece por “lis” que aparezca con un 
+suprarrayado. */
+
+-ul[title ^="lis"] {
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+/*  La división que tenga como valor en el título “contendedor 1” que aumente su tamaño a 20 puntos. */
+
+-div[title="contenedor 1"] {
+    font-size: 20pt;
+}
+
+/* La división que tenga como valor en el título un texto que empiece por “cont” que aparezca con un 
+suprarrayado. */
+
+-div[title ^="cont"] {
+    text-decoration: underline;
+}
+
+/* La división que tenga como valor en el título un nombre que termine en “2” que aparezca con la 
+fuente verdana y con 8 puntos de tamaño.  */
+
+
+-div[title $="2"] {
+    font-family: Verdana;
+    font-size: 8pt;
+}
+
+/* El elemento que tenga como valor en el título un nombre que termine en “1” que aparezca su 
+contenido en cursiva.  */
+
+-*[title $="1"] {
+    font-style: italic;
+}
+
+/*  El elemento que tenga en su título la sílaba “do” que muestre su texto en color. */
+
+-*[title *="do"] {
+    font-style: italic;
+}
+
+/* Al elemento que tenga en su título la sílaba “te” que se muestre con un borde negro de puntos de 
+2px de ancho.  */
+
+-*[title *="ime"] {
+    font-style: italic;
+    border: 2px solid black;
+}
+
+/* Excepto en el contenedor nombrado como “div1”, en el resto de los contenedores que el texto 
+aparezca escrito en color rosa.  */
+
+-main>div>:not(#div1) {
+    color: red;
+}
+
+/* Si el usuario selecciona texto de cualquier párrafo, que aparezca este con color de fondo amarillo.  */
+
+-p::selection {
+    background-color: rgb(230, 255, 5);
+    text-shadow: 1px 1px 5px rgb(4, 66, 4);
+}
+
+/* Aplica un subrayado a aquellos elementos que incluyan en su título la palabra "primero".  */
+
+*[title *="primero"]{
+    color:red;
+}

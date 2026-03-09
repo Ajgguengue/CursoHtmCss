@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        <meta charset="UTF-8">
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            margin: auto;
+            border: 1px solid red;
+            
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+            
+            margin: 5px 0px ;
+        }
+        #d0{
+            width: 800px;
+            padding: 5px;
+        }
+        #d1{
+            border: 1px solid orangered;
+            padding: 5px;
+        }
+        #d2{
+            border: 1px solid violet;
+            padding: 5px 5px;
+            margin: auto;
+        }
+        #d3{
+            border: 1px solid crimson;
+            padding: 5px;
+            
+        }
+        #d4{
+            border: 1px solid green;
+            padding: 5px 5px;
+        }
+        
+        #dparrafo1{
+            margin: 5px 0px ;
+        }
+        #dparrafo2{
+            margin: 5px 0px ;
+        }
+        #dtitulo{
+            margin: auto;
+            height: 80px; 
+            vertical-align: middle;
+            align-items: center;
+    
+        }
+        #dcontenedores{
+            margin: auto ;
+            height: 80px; 
+        }
+        #dtabla{
+            margin: 5px 0px ;
+            height: 150px ;   
+        }
+        #dlista{
+            margin: 5px 0px ;
+        }
+        #dpregunta{
+            height: 50px ;   
+        }
+        .lista-p{
+            padding: 0px 20px;
+            font-size: 10pt;
+            color: #aa4511;
+            line-height: 7pt;
+        }
+        h1 {
+            margin: auto 5px;
+            
+        }
+        h2 {
+            margin: auto 5px;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify ;
+            font-size: 12pt;
+            margin: 15px 10px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="d0">
+        <div id="dtitulo">
+            <h1>Divisi&oacuote; Principal &aacuote</h1>
+        </div>
+        <div id="dparrafo1">
+            <p>
+                La etiqueta <span style="font-weight: 800;">&ltdiv&gt</span> viene de división, prácticamente funciona y sirve de contenedor de bloque, es decir puede contener uno o varios elementos HTML dentro de ella, es bastante utilizada para agrupar varios elementos que luego serán apuntados con CSS con la finalidad de dar un estilo adecuado a dicho grupo, o también puede servir para organizar mejor nuestra página web.
+            </p>
+        </div>
+        <div id="d1">
+            <div id="d2">
+                <div id="dcontenedores">
+                    <h2> Contenedores</h2>
+                </div>
+                <div id="dtabla">
+                    <p>una tabla</p>
+                </div>
+                <div id="dlista">
+                    <h2>Atributos que se pueden usar con la etiqueta &ltDIV&gt</h2>
+                    <p class="lista-p">* 1 ID</p> 
+                    <p class="lista-p">* 2 CLASS</p> 
+                    <p class="lista-p">* 3 WIDTH</p> 
+                    <p class="lista-p">* 4 HEIGHT</p> 
+                    <p class="lista-p">* 5 STYLE</p> 
+                    <p class="lista-p">* 6 TITLE</p> 
+                </div>
+                
+            </div>
+            <div id="d3">
+                <div id="d4">
+                    <div id="dpregunta">
+                        <h2>¿Cuando se usa la Etiqueta Div?</h2>
+                    </div>
+                </div>
+                <div id="dparrafo2">
+                    <p>
+                        La aparición de <span style="font-weight: bold;">HTML5</span> y sus nuevas etiquetas semánticas ha provocado que la etiqueta de división div se utilice cada vez menos en nuestras páginas webs. Teniendo alternativas semánticas como header, section, aside, footer o main entre otras, es común que nos preguntemos para qué y cuándo se usa  la etiqueta div en estos momentos.
+                        En la versión anterior de HTML, la etiqueta div se definía como un elemento de estructuración genérico para una página. Normalmente se usaban los atributos de id y clase para asignar nombres que representaran semántica mente de qué parte de división se trataba. Actualmente, la especificación de W3 define la etiqueta de la siguiente manera:
+                    </p>
+                    <p>
+                        <span style="font-style: italic;">
+                            The div element has no special meaning at all. It represents its children. It can be used with the class, lang, and title attributes to mark up semantics common to a group of consecutive elements. W3 Specification 
+                        </span>
+                    </p>
+                    <p>
+                        (Traducción) El elemento div no tiene ningún significado especial. Se puede utilizar con los atributos “id”, “class”, “lang” y “title” para marcar una seminatica común a un grupo de elementos consecutivos.
+                        Por tanto, esta etiqueta ha quedado relegada a un uso más minoritario y carece de semántica propia. Su uso actual es para estilizar con hojas de estilo contenidos de una web que carezca de etiqueta semántica.
+                    </p>
+                    <p>
+                        Fuente: (<a href="https://www.espai.es/blog/2014/08/cuando-se-usa-la-etiqueta-div/">https://www.espai.es/blog/2014/08/cuando-se-usa-la-etiqueta-div/</a> )
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

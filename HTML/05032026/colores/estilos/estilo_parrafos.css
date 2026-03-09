@@ -1,0 +1,90 @@
+@import url(internos.css);
+
+
+p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+div[id="verde-colorSeguro"] {
+    background-color: green;
+}
+div[id="verde-rgb"] {
+    background-color:rgb(0,255,0)
+}
+div[id="verde-rgba"] {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+div[id="verde-hex"] {
+    background-color: #00ff00;
+}
+
+
+div[id="rojo-colorSeguro"] {
+    background-color: red;
+}
+div[id="rojo-rgb"] {
+    background-color:rgb(255,0,0)
+}
+div[id="rojo-rgba"] {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+div[id="rojo-hex"] {
+    background-color: #ff0000;
+}
+
+div[id="azul1"] {
+    background-color: blue;
+}
+div[id="azul2"] {
+    background-color: hsla(231, 100%, 50%, .9);
+}
+div[id="azul3"] {
+    background-color: hsla(231, 100%, 50%, .8);
+}
+div[id="azul4"] {
+    background-color: hsla(231, 100%, 50%, .7);
+}
+div[id="azul5"] {
+    background-color: hsla(231, 100%, 50%, .6);
+}
+div[id="azul6"] {
+    background-color: hsla(231, 100%, 50%, .5);
+}
+div[id="azul7"] {
+    background-color: hsla(231, 100%, 50%, .4);
+}
+div[id="azul8"] {
+    background-color: hsla(231, 100%, 50%, .3);
+}
+div[id="azul9"] {
+    background-color: hsla(231, 100%, 50%, .2);
+}
+div[id="azul10"] {
+    background-color: hsla(231, 100%, 50%, .1);
+}

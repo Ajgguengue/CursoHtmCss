@@ -1,0 +1,65 @@
+@import url(internos.css);
+
+
+p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+/* o Todos los elementos que tengan el atributo class muéstralos en negrita. 
+ */
+-*[class]{
+    font-weight: bold;
+}
+
+/* o A los enlaces que tengan un atributo title elimínales el subrayado. 
+ */
+-a[title]{
+    text-decoration: none;
+}
+
+/* Los contenidos de los elementos cuyo valor para el atributo class sea igual a 
+ */
+-*[class="ptexto"]{
+    color: rgb(245,0,0);
+}
+
+/* o Tacha los párrafos cuyo atributo class tenga un valor que empiece por la letra 
+t.   
+ */
+
+ p[class ^="t"]{
+    text-decoration: line-through;
+ }
+
+ /* o Tacha los párrafos cuyo atributo id tenga un valor que empiece por la letra t.
+ */
+
+ p[id ^="t"]{
+    text-decoration: line-through;
+ }

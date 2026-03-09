@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria 1</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
+    <style>
+        h1 {
+            font-size: 30px;
+        }
+
+        #d_centrar {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid yellow;
+            margin: 5px auto;
+        }
+
+        table {
+            margin: 15px auto;
+        }
+
+        header {
+            margin: 5px;
+            -height: 100px;
+            border: 2px dashed rgb(125, 25, 54);
+            background-color: rgb(203, 243, 243);
+        }
+
+        main {
+            margin: 5px;
+            border: 2px dashed rgb(125, 25, 54);
+        }
+
+        footer {
+            margin: 5px;
+            height: 70px;
+            border: 2px dashed rgb(125, 25, 54);
+            background-color: rgb(203, 243, 243);
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        h6 {
+            border: 0px solid black;
+            -height: 10px;
+            margin: 5px;
+        }
+
+        h1, h2, h3, h6, p, a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--division semantica cabecera-->
+        <h6 style="visibility: none; margin: 5px;">cabecera</h6>
+        <h2 style="font-weight: bold; font-family:  sans-serif; color:#024b50; margin: 5px; ">AREAS </h1>
+            <p style="font-weight: bold; font-family:  sans-serif; color:#024b50 ; margin: 5px;">enlaces en imagenes de
+                componentes de Pc</p>
+            <!-- he usado alt+z para ajustar la linea -->
+
+    </header>
+    <main>
+        <div id="d_centrar">
+
+
+            <h1>Areas - Componentes de PC</h1>
+            <p>
+
+            </p>
+
+            <img src="imagenes/component_pc.jpg" alt="Componentes Pc" width="500px" height="500px"
+                usemap="#mapa_componentes">
+            <map name="mapa_componentes">
+                <area shape="circle" coords="95,95,50" href="https://www.google.com" alt="Altavoces">
+                <area shape="rect" coords="210,55, 316,219" href="https://www.wikipedia.org" alt="Auriculares">
+                <area shape="circle" coords="421,80,100" href="https://www.lapolka" alt="CAmara">
+                <area shape="poly" coords="38,198,34,289,56,307,150,298,148,274,118,262,51,269,51,202,38,198"
+                    href="https://www.youtube.com" alt="Router">
+                <area shape="rect" coords="192,197,306,298" href="https://www.microsoft.com" alt="Monitor">
+            </map>
+
+
+
+
+        </div>
+    </main>
+    <footer>
+        <h6>el footer</h6>
+        <h6>Curso Html Colom - Angel Gonzalez</h6>
+    </footer>
+</body>
+
+</html>

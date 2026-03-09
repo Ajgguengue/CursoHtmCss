@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Colores</title>
+	<link rel="stylesheet" href="estilos/estilo_pagina.css">
+	<style>
+		@import url(estilos/estilo_parrafos.css);
+		/* div {
+			width: 300px;
+			height: 16px;
+			border: 1px solid #000000;
+			margin: 1px;
+		} */
+		div[id *="-"] {
+			width: 300px;
+			height: 16px;
+			border: 1px solid #000000;
+			margin: 1px;
+		}
+		div[id ^="azu"] {
+			width: 300px;
+			height: 16px;
+			border: 1px solid #000000;
+			margin: 1px;
+		}
+		#contenedor2{
+			width: 80%;
+			font-family: 'Courier New', Courier, monospace;
+			white-space: pre-wrap;       /* Preserva espacios y saltos de línea */
+    		display: block; 
+		}	
+	</style>
+
+
+</head>
+
+<body>
+	<header>
+		<h1>Ejercicio Colores</h1>
+	</header>
+	<main>
+		<div id="contenedor">
+
+			
+
+			<h2>Color Verde Claro</h2>
+			<div id="verde-colorSeguro"></div>
+			<div id="verde-rgb"></div>
+			<div id="verde-rgba"></div>
+			<div id="verde-hex"></div>
+
+			<h2>Color Rojo</h2>
+			<div id="rojo-colorSeguro"></div>
+			<div id="rojo-rgb"></div>
+			<div id="rojo-rgba"></div>
+			<div id="rojo-hex"></div>
+
+			<h2>Escala Transparencia Azul</h2>
+
+			<div id="azul1"></div>
+			<div id="azul2"></div>
+			<div id="azul3"></div>
+			<div id="azul4"></div>
+			<div id="azul5"></div>
+			<div id="azul6"></div>
+			<div id="azul7"></div>
+			<div id="azul8"></div>
+			<div id="azul9"></div>
+			<div id="azul10"></div>
+		</div>
+		<div id="contenedor2">
+Ejercicio colores CSS.
+• Para obtener las equivalencias entre códigos de color o los nombres de éstos como
+colores seguros, busca páginas en Internet relativas al uso del color en HTML y CSS,
+como, por ejemplo:
+o https://htmlcolorcodes.com/es/
+• Abre la página Web Colores.html
+• Crea las reglas CSS que permitan aplicar a cada división un color según las siguientes
+consideraciones:
+o En el primer grupo de divisiones con el título Color Verde Claro aplica el mismo
+color verde claro a cada división usando, en este orden, el nombre del color, su
+valor RGB, su valor en RGB con un 70% de opacidad y su valor en hexadecimal.
+o En el segundo grupo de divisiones con el título Color Rojo aplica el mismo color
+rojo a cada división usando, en este orden, el nombre del color, su valor RGB,
+su valor en RGB con un 70% de opacidad y su valor en hexadecimal.
+o En el tercer grupo de divisiones con el título Escala Transparencia Azul, aplica
+el mismo color azul a cada división usando el mismo modelo de color, pero con
+una opacidad decreciente del 100% a 10 %, con saltos de 10 en 10 por ciento.
+• Nota.
+o Tanto las reglas CSS incluidas en el ejercicio como las que hay añadir,
+guárdalas en un archivo aparte con el nombre colores.css
+o Crea la carpeta css y guarda el ella el archivo colores.css.
+		</div>
+	</main>
+	<footer>
+		<p>Angel Gonzalez - 2026</p>
+	</footer>
+</body>
+
+</html>

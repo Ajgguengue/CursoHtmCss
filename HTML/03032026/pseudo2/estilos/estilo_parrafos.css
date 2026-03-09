@@ -1,0 +1,28 @@
+@import url(internos.css);
+
+
+p{
+    text-align: justify;
+}
+
+a:focus {
+    color: #00ff00; 
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+a{
+    color: #ff8800;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}   
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}

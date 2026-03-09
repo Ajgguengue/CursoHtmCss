@@ -1,0 +1,53 @@
+
+-#d1 > ul :not(h1, p) {
+    color: red;
+}
+
+-#d1 > ul :not(h1, p) {
+    background-color: rgb(190, 142, 51);
+}
+
+#d1 > ul li {
+    font-size: 20px;
+    background-color: rgb(190, 142, 51);
+}
+
+.azul {
+    color: blue;
+}
+
+ul .azul {
+    color: blue;
+}
+
+h1~ul li{
+    color: greenyellow;
+}
+
+h1 + ul {
+    color: green;
+}
+
+#d1 > ul > h1  {
+    color: rgb(236, 156, 8);
+}
+
+div > h1 {
+    color: rgb(233, 236, 63);
+}
+
+#d2 > h1 {
+    color: rgb(182, 8, 182);
+}
+
+#d1 > h1 + p {
+    color: violet;
+}
+
+-#d1 > ul h1~li, #d1 > ul h1~p {
+    color: rgb(8, 182, 182);
+}
+
+h1 + p {
+    color: pink;
+}

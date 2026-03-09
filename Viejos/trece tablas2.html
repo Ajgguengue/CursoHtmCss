@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 2do Ejercicio</title>
+    <style>
+        #div0{
+            width: 800px;
+
+        }
+        #t01{
+            caption-side:bottom;
+        }
+        #t02{
+            border: 1px solid salmon;
+            border-spacing: 3px ; /* Separación de los bordes */
+            border-collapse: collapse;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="div0">
+        
+        <div id="dt01">
+            <!--tabla 1-->
+            <table id="t01" border="1" cellspacing="0" align="center" width="400px">
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Aereopuerto</th>
+                    <th>Playa</th>
+                    <th>Habitantes</th>
+                </tr>
+                <tr>
+                    <td align="center">Reus</td>
+                    <td align="center">Si</td>
+                    <td align="center">No</td>
+                    <td align="center">10000</td>
+                </tr>
+                <tr>
+                    <td align="center">Tarragona</td>
+                    <td align="center">No</td>
+                    <td align="center">Si</td>
+                    <td align="center">130000</td>
+                </tr>
+                <tr>
+                    <td align="center">Madrid</td>
+                    <td align="center">Si</td>
+                    <td align="center">No</td>
+                    <td align="center">310000</td>
+                </tr>
+                <tr>
+                    <td align="center">Barcelona</td>
+                    <td align="center">Si</td>
+                    <td align="center">Si</td>
+                    <td align="center">160000</td>
+                </tr>
+                <caption >Este es el CApition de la tabla 1</caption>
+            </table>
+        </div>
+
+        <br>
+        <hr width="60%"> 
+        <br>
+        
+        <div id="dt02">
+            <!--tabla 2 ingresos-->
+            <table id="t02" border="1" cellspacing="0" align="center" width="200px">
+                <tr>
+                    <th colspan="2">2020</th>
+                </tr>
+                <tr>    
+                    <td rowspan="2" align="center">Enero</td>
+                    <td align="right">50 €</td>
+                </tr>
+                <tr>
+                    <td align="right">150 €</td>
+                </tr>
+                <tr>
+                    <td>Febrero</td>
+                    <td align="right">75 €</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td align="right">125 €</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><span style="text-align: center; font-weight: bold;">Trimestre Siguiente</span></td>
+                </tr>
+                <caption ><span style="font-family: Arial; text-align: center; font-weight: bold; text-decoration:underline;">Ingresos</span></caption>
+            </table>
+        </div>
+
+        <br>
+        <hr width="60%"> 
+        <br>
+
+        <div id="dt03">
+            <!--tabla 2 ingresos-->
+            <table border="1" cellspacing="0" align="center" width="600px">
+                <tr>    
+                    <td rowspan="3" >Paises Europeos</td>
+                    <td >España</td>
+                    <td >Madrid</td>
+                </tr>
+                <tr>
+                    <td >Francia</td>
+                    <td >Paris</td>
+                </tr>
+                <tr>
+                    <td >Reino Unido</td>
+                    <td >Londres</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" >Paises Americanos</td>
+                    <td >EEUU</td>
+                    <td >Washington</td>
+                </tr>
+                <tr>
+                    <td >Canada</td>
+                    <td >Toronto</td>
+                </tr>
+                <tr>
+                    <td >Mexico</td>
+                    <td >Mexico</td>
+                </tr>
+
+                
+                <caption ><span style="font-family: Arial; text-align: center; font-weight: bold; text-decoration:underline;">Tabla 3</span></caption>
+            </table>
+        </div>
+
+        <br>
+        <hr width="60%"> 
+        <br>
+
+
+        <div id="dt04">
+            <!--tabla 2 ingresos-->
+            <table border="1" cellspacing="0" align="center" width="700px">
+                <thead>
+                    <tr style="background-color: black; color: beige; font-size: 10pt; font-family: Arial, Helvetica, sans-serif;">
+                        <th>
+                            Codigo cuenta
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Apellido 1
+                        </th>
+                        <th>
+                            Apellido 2
+                        </th>
+                        <th>
+                            Direccion 
+                        </th>
+                        <th>
+                            Provincia
+                        </th>
+                        <th>
+                            Telefono
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color:#aaaaaa;">
+                        <th><font face="Arial" size="2">45A67</font></th>
+                        <td><font face="Arial">Luis</font></td>
+                         <td><font face="Arial">Pérez</font></td>
+                         <td><font face="Arial">Sánchez</font></td>
+                         <td><font face="Arial">C\ Sirio 3</font> </td>
+                         <td><font face="Arial">Madrid</font></td>
+                         <td><font face="Arial">894567387</font></td>
+                    </tr>
+                    <tr>
+                        <th>45B34</th>
+                        <td>Ana</td>
+                        <td>Ruiz</td>
+                        <td>Gómez</td>
+                        <td>C\ Bellatrix 5</td>
+                        <td>Coslada</td>
+                        <td>293567389</td>
+                    </tr>
+                    <tr style="background-color:#aaaaaa;">
+                        <th><font face="Arial">45A12</font></th>
+                        <td><font face="Arial">Eva</font></td>
+                        <td><font face="Arial">Álvarez</font></td>
+                        <td><font face="Arial">García</font></td>
+                        <td><font face="Arial">Avda. Deneb 32</font></td>
+                        <td><font face="Arial">Madrid</font> </td>
+                        <td><font face="Arial">196367983</font></td>
+                    </tr>
+                    <tr >
+                        <th>45C15</th>
+                        <td>Antonio</td>
+                        <td>Pérez</td> 
+                        <td>Ruiz</td>
+                        <td> C\ Vega 17</td>
+                        <td> Leganés </td>
+                        <td>796557989</td>
+                    </tr>
+                    <tr style="background-color:#aaaaaa;">
+                        <th><font face="Arial">45A84</font></th>
+                        <td><font face="Arial">Fernando</font></td>
+                        <td><font face="Arial"> Vidal</font></td>
+                        <td><font face="Arial"> González</font></td>
+                        <td><font face="Arial"> C\ Antares 65</font></td>
+                        <td><font face="Arial"> Coslada</font></td>
+                        <td><font face="Arial">376557660 </font></td>
+                    </tr>
+                    <tr>
+                        <th>45C34 </th>
+                        <td>Sara</td>
+                        <td> Montalvo</td>
+                        <td> Rodríguez </td>
+                        <td>Avda. Rigel 22</td>
+                        <td> Madrid</td>
+                        <td> 476569334</td>
+                    </tr>
+                </tbody>
+                
+                <caption ><span style="font-family: Arial; text-align: center; font-weight: bold; text-decoration:underline;">Tabla Clientes</span></caption>
+            </table>
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

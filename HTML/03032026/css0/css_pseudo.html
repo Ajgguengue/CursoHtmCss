@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Css</title>
+    <link rel="shortcut icon" href="imagenes/css_icono0.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo_pagina.css" type="text/css">
+    <style>
+        @import url(estilos/estilo_parrafos.css);
+
+        #dcentrar {
+            width: 600px;
+            border: 1px solid black;
+            margin: auto;
+            font-weight: bold;
+        }
+
+        Section p:first-child {
+            font-size: 16pt;
+            font-weight: bold;
+            font-style: italic;
+            color: steelblue;
+        }
+
+        p::selection {
+            color: green;
+            text-shadow: 1px 1px 5px rgb(4, 66, 4);
+        }
+        #tprueba::selection {
+            color: rgb(211, 13, 13);
+            text-shadow: 1px 1px 5px rgb(182, 33, 78);
+        }
+        a:link{
+            color:#a213df; 
+            text-decoration:none;
+        }
+        a:visited{
+            color:orange; 
+        }
+        a:hover{
+            color:steelblue; 
+            text-decoration:underline;
+        }
+        div :not(#p1, .titulos){color:blue;}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--division semantica cabecera-->
+        <h6 style="visibility: none; margin: 5px;">cabecera</h6>
+        <h2 style="font-weight: bold; font-family:  sans-serif; color:#024b50; margin: 5px; ">CSS Pseudoclases</h1>
+            <p style="font-weight: bold; font-family:  sans-serif; color:#024b50 ; margin: 5px;">
+                Selector selection y Pseudoclases de Enlace
+            </p>
+            <!-- he usado alt + z para ajustar la linea -->
+            <!-- he usado alt + shift + f para ajustar indentado -->
+            <nav style="margin: 5px;">
+                <a href="../../02032026/css1/css_basicos1.html" style="font-weight: bold;">Estilos CSS Básicos</a>
+                <a href="css_pseudo.html" style="font-weight: bold;">Pseudoclases CSS</a>
+            </nav>
+    </header>
+    <main>
+
+        <div id="dcentrar">
+
+            <h2 class="titulos"> Selección por el usuario.</h2>
+            <p id="p1"> Selector selection: Permite aplicar un formato a un texto seleccionado por el usuario.
+
+            </p>
+
+            <h2 class="titulos"> Pseudoclases de Enlace.</h2>
+            <p>
+                Son selectores de estado para enlace.
+            </p>
+            <h2 id="tprueba">Un titulo para Lorem</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem repellat et totam
+                corporis eaque distinctio fugit? Facere vitae qui earum fugiat, vel mollitia repellendus, doloremque
+                eligendi velit libero sapiente.
+            </p>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <h6>el footer</h6>
+        <h6>Curso Html Colom - Angel Gonzalez</h6>
+
+    </footer>
+
+
+
+</body>
+
+</html>

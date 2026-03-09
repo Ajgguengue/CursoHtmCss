@@ -1,0 +1,56 @@
+/* palabras internas parrafo 1*/
+.receta1{
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.seleccion1{
+    font-weight: bold;
+    background-color: #a59595;    
+}
+.cocina1{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* palabras internas parrafo 2 */
+
+p .pollo1{
+    font-weight: bold;
+    
+}
+.seleccion2{
+    color: red;
+    font-weight: bold;
+    background-color: #eaec75;    
+}
+
+/* palabras internas parrafo 3 */
+
+
+.teriyaki1, #tery1, #yaki1{
+    
+    font-weight: bold;
+    
+}
+.tecnica1{
+    
+    text-decoration: underline;
+    
+}
+#tery1, #yaki1{
+    font-style: italic;
+}
+
+/* palabras internas parrafo 4 */
+#carnes{
+    color: red;
+    font-weight: bold;
+}
+#yakitori1{
+ 
+    font-weight: bold;
+    text-decoration: underline;
+}

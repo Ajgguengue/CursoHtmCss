@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria 1</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
+    <style>
+        h1{
+            font-size: 30px;
+        }
+        #d_centrar {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid yellow;
+            margin: 5px auto;
+        }
+        table{
+            margin: 15px auto;
+        }
+        header{
+            margin: 5px;
+            -height: 100px;
+            border: 2px dashed rgb(125,25,54);
+            background-color: rgb(203, 243, 243);
+        }
+        main{
+            margin: 5px;
+            border: 2px dashed rgb(125,25,54);
+        }
+        footer{
+            margin: 5px;
+            height: 70px;
+            border: 2px dashed rgb(125,25,54);
+            background-color: rgb(203, 243, 243);
+        }
+        td{
+            padding: 5px;
+        }
+        li{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        h6{
+            border: 0px solid black;
+            -height: 10px;
+            margin: 5px;
+        }
+        h1,h2,h3,h6,p,a{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #audios{
+            margin: 15px auto;
+            width: 80%;
+        }
+        #videos{
+            margin: 15px auto;
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body >
+    <header>
+        <!--division semantica cabecera-->
+        <h6 style="visibility: none; margin: 5px;">cabecera</h6>
+        <h2 style="font-weight: bold; font-family:  sans-serif; color:#024b50; margin: 5px; " >AUDIO y Video 0 </h1>
+        <p style="font-weight: bold; font-family:  sans-serif; color:#024b50 ; margin: 5px;">Etiquetas para audios y Video</p>
+        <!-- he usado alt+z para ajustar la linea -->
+        
+    </header>
+    <main>
+        <div id="d_centrar">
+
+            
+         <h1>Audios y Videos</h1>
+         <p>
+             
+         </p>
+         <div id="audios">
+            <h2>Audio</h2>
+            <p> Audio con control <br>
+           <audio src="cadena.mp3" controls title="Audio Cadena"></audio>  
+           </p>
+           <br>
+           <hr width="60%">
+           <br>
+
+           <p> audio con otros formatos FLAC y AIF  <br>               
+           <audio controls title="Prueba AAC y AIF" loop>
+            <source src="sample-aif.aif">
+            <source src="sample-aac.aac">
+           </audio> 
+
+             <p> Audio con control AAC <br>
+           <audio src="sample-aac.aac" controls title="Audio AAC"></audio>  
+           </p>
+            <p> Audio con control FLAC <br>
+           <audio src="sample-flac.flac" controls title="Audio FLAC"></audio>  
+           </p>
+            <p> Audio con control AIF <br>
+           <audio src="sample-aif.aif" controls title="Audio AIF"></audio>  
+           </p>
+           <br>
+           <hr width="60%">
+           <br>
+
+           <p> audio sin pre-carga desde archive.org      <br>          
+           <audio src="https://dn721803.ca.archive.org/0/items/podcast_linux/PL02.ogg" controls></audio>
+           </p>
+
+           <p> audio con pre-carga desde archive.org  <br>              
+           <audio src="https://dn721803.ca.archive.org/0/items/podcast_linux/PL02.ogg" controls preload="auto"></audio>
+           </p>
+
+         </div>
+
+
+         <div id="videos">
+            <h2>Videos</h2>
+            <p> Video con control <br>
+                <video src="sample-3.mp4" controls title="Video MP4" width="320" height="240"></video>
+            </p>
+            <p> Video sin control auto y bucle<br>
+                <video src="sample-3.mp4"  title="Video MP4" width="320" height="240" autoplay loop muted></video>
+            </p>
+            <p> Video con control y otros formatos WEBM y OGG <br>
+                <video controls title="Prueba WEBM y OGG" width="320" height="240">                    
+                    <source src="sample-3.mkv" title="video mkv">
+                    <source src="sample-3.mp4" title="video mp4">
+                </video>
+            </p>
+            <p> Video con Poster -imagen inicial-<br>
+                <video src="sample-3.mp4"  title="Video MP4 con POSTER" width="320" height="240" controls poster="video-poster.jpg"></video>
+            </p>
+            <p> Video desde internet -externo-<br>
+            <video src="https://archive.org/ByGeremiXD.mp4" controls preload="none"></video>
+            </p>
+
+
+         </div>
+
+
+            
+        </div>
+    </main>
+    <footer>    
+        <h6>el footer</h6>
+        <h6>Curso Html Colom - Angel Gonzalez</h6>
+    </footer>

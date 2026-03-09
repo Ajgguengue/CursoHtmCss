@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Tablas 2</title>
+    <style>
+        .codigo_p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        
+        <div id="dt01">
+            <!--tabla actores-->
+            <table id="t01" border="1" align="center">
+                <caption style="font-style: italic; font-weight: bold;">Filmografia</caption>
+                
+                <tr align="center">
+                    <th>
+                        Actor / Actriz
+                    </th>
+                    <th>
+                        Numero de Películas
+                    </th>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Ben Affleck
+                    </td>
+                    <td>
+                        51
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Rosamund Pike
+                    </td>
+                    <td>
+                        35
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Antonio Banderas
+                    </td>
+                    <td>
+                        47
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Clint Eastwood
+                    </td>
+                    <td>
+                        96
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Meryl Streep    
+                    </td>
+                    <td>
+                        77
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br>
+        <hr size="1px" width="60%">
+        <br>
+
+        
+
+        <div id="dt01">
+            <!--tabla resultados-->
+            <table border="1px" align="center" width="400px">
+                <caption style="font-size: 14pt; font-weight: bolder; text-decoration: underline;">Resultados Globales</caption>
+                <thead>
+                    <tr align="center">
+                        <td colspan="4"  bgcolor="#BBB"><strong>Curso 2019/2020</strong></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <th colspan="2">       1º ESO - A             </th>
+                        <th colspan="2">       1º ESO - B             </th>
+                    </tr>
+                    <tr align="center">
+                        <td>Aprobados</td>
+                        <td>Suspensos</td>
+                        <td>Aprobados</td>
+                        <td>Suspensos</td>
+                    </tr>
+                    <tr align="center" >
+                        <td>68%</td>
+                        <td>57%</td>
+                        <td>32%</td>
+                        <td>43%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <br>
+        <hr size="1px" width="60%">
+        <br>
+
+        <div id="dt01">
+            <!--tabla Productos-->
+            <table border="1px" align="center" width="800px">
+                <caption style="font-size: 14pt; font-weight: bolder; font-family: sans-serif; ">Venta de Productos</caption>
+                <colgroup >
+                    <col span="1" style="visibility:visible;">
+                    <col span="2">
+                    <col span="2" style="background-color: rgb(122, 122, 238);">
+                    <col style="background-color: rgb(238, 236, 102);">
+                </colgroup>
+                <thead style="font-family: sans-serif; color: bisque; background-color: #222;">
+                    <tr align="center">
+                        <th bgcolor="#111">Codigo Producto</th><!--bgcolor propiedad vieja . ejor usar style bacgro-->
+                        <th >Nombre</th>
+                        <td >Cantidad Vendida</td>
+                        <th >Precio Unitario</th>
+                        <th >Sub-Total</th>
+                        <td bgcolor="#111">Fecha de Venta</td>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr style="background-color: #ccc;">
+                        <th class="codigo_p">  INF632   </th>
+                        <td>Monitor 23"</td>
+                        <td>5</td>
+                        <td>196.00 €</td>
+                        <td>980.00 €</td>
+                        <td>19-02-2022</td>
+                    </tr>
+                    <tr>
+                        <th class="codigo_p">  INF009   </th>
+                        <td>Impresora Láser HP</td>
+                        <td>3</td>
+                        <td style="text-align:right;  font-variant-numeric:tabular-nums; ">180.50 €</td>
+                        <td style="text-align:right;  font-variant-numeric:tabular-nums; ">541.50 €</td>
+                        <td>20-02-2022</td>
+                    </tr>
+                    <tr >
+                        <th class="codigo_p">  INF452   </th>
+                        <td>Smartphone Xiaomi Note 10</td>
+                        <td>12</td>
+                        <td style="text-align:right;  font-variant-numeric:tabular-nums; ">220.00 €</td>
+                        <td style="text-align:right;  font-variant-numeric:tabular-nums; ">2640.00 €</td>
+                        <td>21-02-2022</td>
+                    </tr>
+                    <tr>
+                        <th class="codigo_p">  INF458   </th>
+                        <td>Smartphone Xiaomi Note 11</td>
+                        <td>7</td>
+                        <td style="text-align:right;  font-variant-numeric:tabular-nums; ">460.00 €</td>
+                        <td style="text-align:right;  font-variant-numeric:tabular-nums; ">3220.00 €</td>
+                        <td>21-02-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <br>
+        <hr size="1px" width="60%">
+        <br>
+
+    </div>
+    
+</body>
+</html>

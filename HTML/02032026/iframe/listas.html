@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Listas y Definiciones de listas</title>
+    <style>
+        div{
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid orangered;
+        }
+        #div0{
+            width: 900px;
+            margin: auto;
+            border: 5px dashed red;
+                        
+        }
+        dt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16pt;
+            color: blue;
+
+        }
+        p{
+            font-family:sans-serif;
+            font-size: 12pt;
+            text-align: justify;
+        }
+        h1 {
+            font-family:sans-serif;
+            font-size: 16pt;
+            color: brown;
+        }
+        h2{
+            font-family:serif;
+            font-size: 14pt;
+            color: brown;
+        }
+        .url-simul{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <div id="ej1">
+            <!--Ejercicio 1-->
+            <h1>Impresoras</h1>
+            <p>si clasificamos con relacion al metodo por el que se genera el caracter, distinguimos las impresoras de impacto y las impresoras sin impacto: </p>
+            <ul type="square">
+                <li><p>las <span style="font-style: italic; ">impresoras de impacto </span>son aquellas que golpean el medio con el elemnto impresor para formar el caracter </p></li>
+                <li><p>las <span style="font-style: italic; ">impresoras sin impacto </span>emplean tecnicas termicas o electrostaticas para imprimir el caracter sin necesidad de impactos </p></li>
+            </ul>
+            <hr size="1px" color="green" width="60%">
+        </div>
+        <div id="ej2">
+            <!-- ejercicio 2-->
+             <h1>Instrucciones</h1>
+             <ol>
+                <li>Enchufar correctamente</li>
+                <li>Comprobar conexiones</li>
+                <li>Encender el aparato</li>
+             </ol>
+            <hr size="1px" color="#ff0000" >
+        </div>
+        <div id="ej3">
+            <!-- ejercio3-->
+            <h1>Un menu &uacuote;</h1>
+            <ul style="font-size: 18pt; font-weight: bold;">
+                <li>Inicio</li>
+                <li>Sobre Mi</li>
+                <li>Servicios:
+                    <ul>
+                        <li>Fontaneria</li>
+                        <li>Electricidad</li>
+                        <li>Pintura
+                            <ul>
+                                <li>Parkings</li>
+                                <li>Trabajos en altura</li>
+                                <li>Domicilios privados</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <li>Testimonios</li>
+                <li>Contacto</li>
+                </li>
+            </ul>
+            
+        </div>
+        <div id="ej4">
+            <!--Ejercicio 4-->
+            <H1>Diccionario de la Real Academia</H1>
+            <dl>
+                <dt>Brujula:
+                    <dd>Señorula montada en una escobula</dd>
+                </dt>
+                <dt>Oreja
+                    <dd>Sesenta minutejos</dd>
+                </dt>
+            </dl>
+        </div>
+        <div id="ej5">
+            <!--Ejercicio 5-->
+            <H2>Crear una lista de definiciones para los siguientes terminos. Puedes buscar la informacion en Google</H2>
+            <dl>
+                <dt>HTTP:
+                    <dd>
+                        <p>
+                            Es el <strong>protocolo</strong> o "lenguaje" que permite la transferencia de información y páginas web entre un navegador y un servidor Wikipedia.
+                        </p>
+                    </dd>
+                </dt>
+                <dt>HTML:
+                    <dd>
+                        <p>
+                            El <strong>lenguaje de marcado</strong> estándar utilizado para crear y estructurar el contenido (texto, imágenes, enlaces) de las páginas web MDN Web Docs.
+                        </p>
+                    </dd>
+                </dt>
+                <dt>URL:
+                    <dd>
+                        <p>
+                            Es la <strong>dirección específica</strong> y única que se utiliza para localizar un recurso (como una página o una foto) en la red HubSpot.
+                        </p>
+                    </dd>
+                </dt>
+                <dt>TCP/IP:
+                    <dd>
+                        <p>
+                            Es el <strong>conjunto de reglas</strong> básicas que permiten que las computadoras se comuniquen entre sí y formen la red de redes Avast.
+                        </p>
+                    </dd>
+                </dt>
+                <dt>Internet:
+                    <dd>
+                        <p>
+                            Una <strong>red global</strong> descentralizada de computadoras interconectadas que utilizan el protocolo TCP/IP para compartir información GCFGlobal.
+                        </p>
+                    </dd>
+                </dt>
+                <dt>W3C:
+                    <dd>
+                        <p>
+                            El <strong>consorcio internacional</strong> que genera recomendaciones y estándares (como el HTML) para asegurar el crecimiento de la web a largo plazo World Wide Web Consortium.
+                        </p>
+                    </dd>
+                </dt>
+                <dt>Mozilla Foundation:
+                    <dd>
+                        <p>
+                            Una <strong>organización sin fines de lucro</strong> que promueve la apertura, innovación y oportunidad en la web, conocida principalmente por desarrollar el navegador Firefox Mozilla.org. 
+                        </p>
+                    </dd>
+                </dt>
+            </dl>
+        </div>
+        <div id="ej6">
+            <!--Ejercicio 6-->
+            <h1>Menu</h1>
+            <ul>
+                <li>Inicio</li>
+                <li><span style="font-weight: bold;">Noticias: </span>
+                    <ol>
+                        <li><span class="url-simul">Recientes</span></li>
+                        <li><span class="url-simul"><strong> Mas Leidas</strong></span></li>
+                        <li><span class="url-simul">Mas Valoradas</span></li>
+
+                    </ol>
+                </li>
+                <li>Articulos
+                    <ol>
+                        <li><b>XHTML</b></li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Otros</li>
+                    </ol>
+                </li>
+                <li>Contacto
+                    
+                    <dl>
+                        <ul>
+                            <li>
+                                <dt style="font-size: 12pt; font-family: serif;">Email:
+                                    <dd>unemail@gmail.com</dd>
+                                </dt>
+                            </li>
+                            <li>
+                                <dt style="font-size: 12pt; font-family: serif;">Telefono:
+                                    <dd>+34 600-124-124</dd>
+                                </dt>
+                            </li>
+                            <li>
+                                <dt style="font-size: 12pt; font-family: serif;">Direccion:
+                                    <dd>una direccion </dd>
+                                </dt>
+                            </li>
+                        </ul>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

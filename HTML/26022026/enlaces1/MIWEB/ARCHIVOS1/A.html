@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria 1</title>
+    <style>
+        h1{
+            font-size: 30px;
+        }
+        #d_centrar {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid yellow;
+            margin: 5px auto;
+        }
+        table{
+            margin: 15px auto;
+        }
+        header{
+            margin: 5px;
+            -height: 100px;
+            border: 2px dashed rgb(125,25,54);
+            background-color: rgb(203, 243, 243);
+        }
+        main{
+            margin: 5px;
+            border: 2px dashed rgb(125,25,54);
+        }
+        footer{
+            margin: 5px;
+            height: 70px;
+            border: 2px dashed rgb(125,25,54);
+            background-color: rgb(203, 243, 243);
+        }
+        td{
+            padding: 5px;
+        }
+        li{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        h6{
+            border: 0px solid black;
+            -height: 10px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body >
+    <header>
+        <!--division semantica cabecera-->
+        <h6 style="visibility: none; margin: 5px;">cabecera</h6>
+        <h2 style="font-weight: bold; font-family:  sans-serif; color:#024b50; margin: 5px; " >PAGINA A </h1>
+        <p style="font-weight: bold; font-family:  sans-serif; color:#024b50 ; margin: 5px;">enlaces con paginas internas dentro y fuera del directorio</p>
+        <!-- he usado alt+z para ajustar la linea -->
+    </header>
+    <main>
+        <div id="d_centrar">
+
+            
+         <p>Uso de Enlaces </p>
+         <ul>
+
+            <li> enlace href a una direccion local fuera directorio. <a href="../ARCHIVOS1/B.html" > Ir a Pagina B </a> </li>
+            <li> enlace href a una direccion local fuera directorio. <a href="../ARCHIVOS2/C.html" > Ir a Pagina C </a> </li>
+            <li> enlace href a una direccion local fuera directorio. <a href="../../d.html" > Ir a Pagina D </a> </li>
+            
+         </ul>
+         <p>Enlaces Externos</p>
+         <ol>
+
+            <li> Enlace Externo Yahoo <a href="http://www.yahoo.es/" >  Yahoo </a> </li>
+            <li> Enlace Externo Google <a href="http://www.google.es/" > Google </a> </li>
+            
+            
+         </ol>
+            
+        </div>
+    </main>
+    <footer>    
+        <h6>el footer</h6>
+        <h6>Curso Html Colom - Angel Gonzalez</h6>
+    </footer>
+    
+</body>
+</html>

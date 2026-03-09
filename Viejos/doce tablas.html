@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Tablas</title>
+    <style>
+        #dcentrar{
+            width: 600px;
+            border: 0.5px dashed red;
+            margin: auto;
+        }
+        #t01{
+            border: 1px solid black;
+        }
+        #t03{
+            background-color:aquamarine;
+            
+        }
+        .row{
+            -border: 1px solid violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dcentrar">
+        <table id="t01" border="1" cellspacing="0">
+            <tr class="row">
+                <th>
+                    CELDA 1 TH Primera Columna    
+                </th>
+                <th>
+                    CELDA 2 TH Segunda  
+                </th>                
+            </tr>
+            <tr class="row">
+                <td>
+                    CELDA  1  
+                </td>
+                <td>
+                    CELDA 2    
+                </td>
+            </tr>
+            <tr class="row">
+                <td>
+                    CELDA 3 Curso HTML instituto Colom 
+                </td>
+                <td>
+                    CELDA 4    
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr width="60%">
+        <br>
+        <table id="t02" border="1" cellspacing="0">
+            <caption>Titulo de Tabla 2 con TH columna</caption>
+            <tr class="row">
+                <th>
+                    CELDA 1 TH Primera Columna    
+                </th>
+                <td>
+                    CELDA 2 TH Segunda  
+                </td>                
+                <td>
+                    CELDA 3    
+                </td>
+                <td>
+                    CELDA 4    
+                </td>
+            </tr>
+            <tr class="row">
+                <th>
+                    CELDA  5  
+                </th>
+                <td>
+                    CELDA 6    
+                </td>
+                <td>
+                    CELDA 7    
+                </td>
+                <td>
+                    CELDA 8    
+                </td>
+
+            </tr>
+            <tr class="row">
+                <th>
+                    CELDA 9 Curso HTML instituto Colom 
+                </th>
+                <td>
+                    CELDA 10    
+                </td>
+                <td>
+                    CELDA 11    
+                </td>
+                <td>
+                    CELDA 12    
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <hr width="60%">
+        <br>
+
+        <table id="t03" border="1" cellspacing="0" width="500px" height="500px">
+            <caption>Tabla con esquema THEADER TBODY TFOOTER</caption>
+            <thead>
+                <tr>
+                    <th bgcolor="#934516">
+                        CELDA 1 TH Primera Columna    
+                    </th>
+                    <th bgcolor="#834546">
+                        CELDA 2 TH Segunda  
+                    </th>                
+                    <th bgcolor="#734576">
+                        CELDA 3 TH Tercera  
+                    </th>                
+                </tr>
+            </thead>
+            <tbody style="border: 2px solid blue;">
+                <tr>
+                    <td align="center" bgcolor="#158211">
+                        CELDA 1 TBody  
+                    </td>
+                    <td>
+                        CELDA 2 TBody
+                    </td>
+                    <td>
+                        CELDA 3 TBody
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CELDA 4 TBody  
+                    </td>
+                    <td>
+                        CELDA 5 TBody    
+                    </td>
+                    <td bgcolor="#aaa" align="right">
+                        CELDA 6 TBody    
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        CELDA 1 Tfoot con colspan 2
+                    </td>
+                  
+                    <td height="100px" bgcolor="#789555">
+                        CELDA 3 Tfoot
+                    </td>
+                </tr>
+            </tfoot>
+            
+        </table>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- Prueba de código HTML-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Selector Universal.
+		</title>
+		<meta charset="UTF-8">
+		<style>
+		
+			div{border:1px solid black;height:500px;}
+			
+			/* Selector Universal. Reseteo de valores por defecto de un navegador y mismo estilo a todos los elementos */
+			
+				-*{margin:0px; padding:0px;font-family:verdana; color:green}
+			
+			/* Mismo estilo a todos los elementos */
+			
+				-h1,-p,-ul{margin:0px; -padding:0px; font-family:verdana; color:green}
+			
+			/* Selector de negación. */
+			
+				-div :not(h1){color:blue;}
+				-div :not(.parrafos){color:red;}
+		</style>
+	
+	</head>
+	<body>
+		<div>
+			<h1>Título</h1>
+			<p class ="parrafos">Párrafo 1 </p>
+			<p class ="parrafos">Párrafo 2 </p>
+			<ul>
+				<li>uno</li>
+				<li>dos</li>
+				<li>tres</li>
+			</ul>	
+			<p class ="parrafos">Párrafo 3 </p>
+		</div>
+		
+		
+	</body>
+	
+</html>

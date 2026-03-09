@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Css</title>
+    <link rel="shortcut icon" href="imagenes/css_icono0.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo_pagina.css" type="text/css">
+    <style>
+        @import url(estilos/estilo_parrafos.css);
+
+        #dcentrar {
+            width: 70%;
+            border: 1px solid black;
+            margin: auto;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        Section p:first-child {
+            font-size: 16pt;
+            font-weight: bold;
+            font-style: italic;
+            color: steelblue;
+        }
+
+        p::selection {
+            color: green
+        }
+
+        /*footer > p:nth-child(3) 
+        {   
+            font-size: 16pt; font-weight: bold;
+            font-style: italic; color: steelblue;
+        }  
+        footer > p:first-of-type
+        {
+            font-size: 16pt; font-weight: bold;
+            font-style: italic; color: steelblue;
+        }*/
+        footer>h6~p:first-of-type {
+            font-size: 16pt;
+            font-weight: bold;
+            font-style: italic;
+            color: steelblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--division semantica cabecera-->
+        <h6 style="visibility: none; margin: 5px;">cabecera</h6>
+        <h2 style="font-weight: bold; font-family:  sans-serif; color:#024b50; margin: 5px; ">Link CSS </h1>
+            <p style="font-weight: bold; font-family:  sans-serif; color:#024b50 ; margin: 5px;">enlaces con estilos CSS
+            </p>
+            <!-- he usado alt+z para ajustar la linea -->
+
+    </header>
+    <main>
+
+        <div id="dcentrar">
+
+            <h1 style="font-family: 'comic sans ms'; color: steelblue; text-align: center;">
+                Cómo hacer pollo teriyaki.
+            </h1>
+
+            <p class="parrafo" id="parrafo1">La cocina japonesa tiene un sinfín de platos más allá del sushi y entre
+                ellos está esta <span class="receta1">receta de pollo teriyaki</span>. Se trata de <span class="seleccion1">
+                uno de los platos japoneses más conocidos</span> en occidente, junto con el sushi y el sashimi, y se ha
+                convertido en una receta recurrente para los amantes de la <span class="cocina1">cocina japonesa</span>.
+            </p>
+
+            <p class="parrafo">Sin meternos en las profundidades del sushi, que puede resultar bastante laborioso a la
+                hora en su preparación, el <span class="pollo1">pollo teriyaki</span> es una <span
+                    class="seleccion2">receta
+                    muy sencilla</span> que fácilmente podemos hacer nosotros mismos.
+            </p>
+
+            <p class="parrafo parrafo3">En realidad, el <span class="teriyaki1">teriyaki</span> es una <span
+                    class="tecnica1">técnica culinaria</span> que consiste en cocinar los alimentos en una salsa dulce,
+                ya sea al
+                horno o a la parrilla. La palabra teriyaki deriva de <span id="tery1">teri</span>, refiriéndose al
+                brillo o
+                lacado que le aporta la salsa en la que se baña, y <span id="yaki1">yaki</span>, indicando el método de
+                cocina
+                sumergiendo el producto dentro de la salsa.
+            </p>
+
+            <p class="parrafo parrafo4">Podemos hacer teriyaki con otro tipo de carnes o pescados (<span
+                    id="carnes">cerdo,
+                    vaca, atún, salmón</span>…) y formas, es muy conocido el <span id="yakitori1">yakitori
+                    teriyaki</span>, unas
+                brochetas de pollo y verduras cocinadas al estilo teriyaki
+            </p>
+
+        </div>
+        <section>
+            (selector sólo para párrafo 1).
+            <p>Párrafo 1</p>
+            <p>Párrafo 2</p>
+            <p>Párrafo 3</p>
+        </section>
+
+    </main>
+    <footer>
+        <h6>el footer</h6>
+        <h6>Curso Html Colom - Angel Gonzalez</h6>
+        <p> Pie de Página</p>
+        <p> Copyright: <span id="colorin">Fulanito</span></p>
+
+    </footer>
+
+
+
+</body>
+
+</html>

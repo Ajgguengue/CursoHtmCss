@@ -1,0 +1,232 @@
+@import url(internos.css);
+
+
+p{
+    text-align: justify;
+}
+
+a:focus {
+    color: #00ff00; 
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+a{
+    color: #ff8800;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}   
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+-#lista1 li:first-child {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Al primer elemento de la lista 1 aplícale el estilo cursiva. */
+
+-li:first-child {
+    color: #5ba0e2;
+    font-weight: bold;
+    font-style: italic;
+}
+
+-#lista li:first-of-type {
+    color:  #5ba0e2;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Tacha el último elemento de la lista. */
+
+-#lista li:last-of-type {
+    font-weight: bold;
+    text-decoration:line-through;
+}
+
+/* Aplica el color magenta al segundo elemento de tipo título de la división. */
+
+-#contenedor p:nth-of-type(2) {
+    color: magenta;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Convierte a versales las minúsculas del segundo elemento de tipo <li> de la lista */
+-li:nth-of-type(2) {
+    font-variant: small-caps;
+    font-weight: bold;
+    
+}
+
+/* Aplica el color rojo a los elementos pares de tipo <li> de la lista */
+-#lista li:nth-of-type(even) {
+    color: red;
+    font-weight: bold;
+}
+
+/* Aplica el color naranja de fondo a los elementos impares de tipo <li> de la lista. */
+-#lista li:nth-of-type(odd) {
+    background-color: orange;
+    font-weight: bold;
+}
+
+
+/* 9. Aplica un tamaño de 20 píxeles al tercer elemento de la división. */
+-#contenedor :nth-child(3):not(li) {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+-#contenedor :nth-child(3) {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* 10. Subraya todos los elementos impares de la división. */
+-#lista :nth-child(odd) {
+    font-weight: bold;
+    text-decoration:line-through;
+}
+
+/* 12. Reduce el tamaño a 9 puntos y aplica la fuente Georgia al 2º elemento de tipo párrafo sin usar su id. */
+
+-#contenedor p {   
+    color: #da1c1c;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: Georgia;
+}
+
+-#contenedor > p {
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: Georgia;
+    text-decoration:line-through;
+}
+
+-#contenedor > h1:nth-of-type(1) {
+    font-weight: bold;
+    background-color: pink;
+}
+
+-#contenedor h1:first-child {
+    font-weight: bold;
+    background-color: rgb(151, 82, 94);
+}
+
+/*  Al segundo elemento de la lista empezando por el final cámbiale su color por el amarillo y ponle un
+fondo azul marino. */
+
+#lista li:nth-last-child(2) {
+    color: red;
+    background-color: rgb(235, 146, 146);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Separa las letras del elemento de tipo <li> número 4 empezando por el final de la lista, una cantidad
+20 píxeles. */
+
+#lista li:nth-last-child(4) {
+    
+    background-color: rgb(235, 146, 146);
+    font-weight: bold;
+    letter-spacing: 20;
+}
+
+
+
+
+
+/* Aplica el color lima al quinto elemento de tipo <li> de la primera lista */
+-#lista1 li:nth-of-type(5) {
+    color: lime;
+    font-weight: bold;
+}
+
+/* Aplica el color lima a los elementos pares de tipo <li> de la primera lista */
+-#lista1 li:nth-of-type(even) {
+    color: lime;
+    font-weight: bold;
+}
+
+-#lista1 li:nth-of-type(odd) {
+    color: lime;
+    font-weight: bold;
+}
+
+/* Aplica el color verde al tercer elemento de la segunda lista. */
+-#lista2 li:nth-of-type(3) {
+    color: green;
+    font-weight: bold;
+}
+
+/* Aplica tamaño 18 a los elementos pares de la segunda lista */
+-#lista2 li:nth-of-type(even){
+    color: green;
+    font-size: 18pt;
+}
+
+/* Subraya todos los elementos impares de la lista 2. */
+#lista2 li:nth-of-type(odd){
+    color: green;
+    text-decoration: underline;
+}
+
+/* Aplica el color #864cda al 2º elemento de tipo párrafo del primer contenedor. */
+
+-#div1 p:nth-of-type(2) {
+    color: #864cda;
+    font-weight: bold;
+}
+
+/* Aplica a los elementos de tipo párrafo del primer contenedor los siguientes estilos: color de fuente
+lima, color de fondo negro y borde interno de 5 pixeles */
+-#div1 p:nth-of-type(1){
+    color: lime;
+    font-weight: bold;
+    background-color: black;
+    border: 6px dashed #da1c1c;
+}
+
+/* Aplica al último elemento de tipo párrafo del primer contenedor los siguientes estilos: color de
+fuente lima, color de fondo negro y borde interno de 5 pixeles. */
+
+#div1 p:last-of-type{
+    color: lime;
+    font-weight: bold;
+    background-color: black;
+    border: 6px dashed #da1c1c;
+}
+
+/* Invierte los colores fondo-primer plano del primer elemento del primer contenedor */
+
+
+/* Aplica el color de fondo #da4cd8 al 4º elemento empezando por el final de ambas listas */
+-li:nth-last-of-type(4) {
+    background-color:#da4cd8 ;
+
+}
+
+/* Aplica un color de fondo naranja al elemento de tipo lista número 2 empezando por el final de la
+lista */
+
+#lista2 li:nth-last-of-type(2) {
+    background-color: orange ;
+
+}
+

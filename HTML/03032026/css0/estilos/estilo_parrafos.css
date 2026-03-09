@@ -1,0 +1,18 @@
+@import url(internos.css);
+#parrafo1{
+    
+    font-family: arial;
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+.parrafo3{
+    font-family: 'comic sans ms';
+    color: steelblue;
+}
+
+.parrafo4{
+    background-color: rgb(192, 180, 180);
+}
