@@ -85,6 +85,13 @@ valores numéricos. */
     text-decoration: underline;
 }
 
+#p0{
+    font-size: 18px;
+    font-size-adjust: 0.471
+}
+
+
+
 /* • Ajusta el tamaño minúsculas-mayúsculas al párrafo identificado como p0. Para ello 
 bookman - verdana 0.471 */
 
@@ -128,6 +135,7 @@ utiliza la notación hexadecimal abreviada. */
    text-shadow: -2px 2px 2px rgb(111, 233, 30) 
 }
  
+h1 [id=]
 
 /* el párrafo primero EM*/
 #div1 > #primeroEM {
