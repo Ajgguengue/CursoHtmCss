@@ -35,7 +35,7 @@ a:visited {
 .parrafos p{
     color: #D7143E;
     text-indent: 5%;
-    text-align: justify; -- Alinea ambos párrafos de forma justificada.
+    /* text-align: justify; -- Alinea ambos párrafos de forma justificada. */
     
 
 }
@@ -46,16 +46,16 @@ a:visited {
 
 /* • Aplica una distancia entre palabras en el párrafo segundo de 30 píxeles.
  */
--#p2{ letter-spacing: 30px; }
+-#p2{ word-spacing: 30px; }
 
 /* Aumenta el interlineado a 1'5 veces el tamaño de fuente en el párrafo primero usando
 valores numéricos. */
--#p1{ line-height:1.5em}
+#p1{ line-height:1.5em}
 
 
 /* • Aplica un interlineado doble en el párrafo segundo expresándolo en porcentaje.
  */
--#p2{ line-height:2}
+#p2{ line-height:200%}
 
 
 /* • Pasa a mayúsculas el texto del título identificado como mayus.
@@ -89,8 +89,6 @@ valores numéricos. */
     font-size: 18px;
     font-size-adjust: 0.447
 }
-
-
 
 /* • Ajusta el tamaño minúsculas-mayúsculas al párrafo identificado como p0. Para ello 
 bookman - verdana 0.471 */

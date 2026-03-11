@@ -1,0 +1,211 @@
+@import url(internos.css);
+
+
+-p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+
+h3 {
+    color: rgb(247, 169, 1);
+    font-size: 16px;
+    -margin-left: 1em;
+    -padding-left: 1em;
+    text-align: center;
+}
+
+#lista1{
+    list-style-type: none;
+}
+
+/* Aplica viñetas con círculos a la segunda lista.
+ */
+
+ #lista2{
+    list-style-type: none;
+    list-style-type:circle;
+ }
+ #lista2 li::marker {
+  color: rgb(0, 4, 255);
+  font-size: 16px; /* Cambiar tamaño de la viñeta */
+}
+
+ /* Aplica viñetas con cuadrados de color granate a la tercera lista.
+ */
+
+#lista3{
+    list-style-type: none;
+    list-style-type:square;
+
+}
+
+ #lista3 li::marker {
+  color: red;
+  font-size: 2em; /* Cambiar tamaño de la viñeta */
+}
+
+
+/* Para la lista4 utiliza número romanos. */
+
+#lista4{
+    list-style-type: none;
+    list-style-type:upper-roman;
+
+}
+
+#lista5{
+    list-style-type: none;
+    list-style-type:lower-roman;
+
+}
+
+/* Numera la sexta lista con letras griegas. */
+
+#lista6{
+    list-style-type: lower-greek;
+}
+
+/* • En la lista 7 usa números correlativos precedidos por un 0.
+ */
+
+#lista7{
+    list-style-type: decimal-leading-zero ;
+}
+
+/* Aplica letras latinas mayúsculas a 
+ la lista 8 y minúsculas a la lista 9.
+o En ambas listas usa la fuente Arial y 
+su genérica para las letras de numeración,
+así como el estilo negrita. */
+
+#lista8{
+    list-style-type: lower-latin;
+}
+
+#lista9{
+    list-style-type: upper-latin;
+}
+
+#lista9 li::marker, #lista8 li::marker{
+    color: #D7143E;
+    font-family: Arial, 'sans-serif';
+    font-weight: bold;
+}
+
+/* • Usa el alfabeto georgiano para 
+numerar la lista número 10.
+ */
+
+#lista10{
+    list-style-type: georgian;
+}
+
+#lista10 li::marker{
+    color: #da1c1c;
+    font-size: 20px;
+}
+
+/* Para la lista 11 utiliza 
+una imagen o icono para las viñetas */
+
+#lista11{
+    List-style-image: url(../Iconos/check.ico)
+
+}
+
+/* no fucniona cambiar tamaño del icono */
+#lista11 li::marker{
+    font-size: 0.5rem;
+    color: #0c0666;
+}
+
+ /* Para las listas 12 y 13 prueba 
+ la posición de las viñetas respecto
+  del texto interior y
+exterior respectivamente. */
+
+#lista12{
+    list-style-position: inside;
+    
+}
+
+#lista13{
+    list-style-position: outside;
+    
+}
+
+/* Justificar el texto de 
+las listas 12 y 13 */
+#lista12 li, #lista13 li{
+    text-align: justify;
+    padding-right: 10px;
+    
+}
+
+/*  */
+
+-#lista14{
+    list-style: url(../Iconos/guitarra.png) inside upper-roman;
+    
+}
+
+/* Quitar las viñetas
+ a las listas 14 y 15 */
+#lista14, #lista15{
+    -list-style: none;
+    list-style-type: none;
+}
+
+/* • Incluir como viñeta una
+ almohadilla en la lista 14.
+  (Usar pseudoelemento ::before)
+ */
+
+#lista14 li::before{
+    content: "#";
+    margin-right: 15px;
+}
+
+
+
+/* #lista15 li::before{ */
+
+#lista15 li::before{  
+    content: "      ";
+    margin-right: 10px;
+    -content: url('../Iconos/deshacer.ico');
+    background-image: url('../Iconos/bebida.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    -width: 10px;
+    height: 100px;
+    
+    
+}
+
