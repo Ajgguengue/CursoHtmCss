@@ -114,6 +114,19 @@ blanco3 y se muestre su contenido en una línea. */
 tanto la regla CSS como el elemento HTML necesario para sólo seleccionar el número y
 aplicarle sólo a éste el estilo */
 
+
+/* En el título identificado como base eleva la palabra arriba y baja la palabra abajo
+respecto de la línea base de escritura, aplicando la medida relativa que consideres. Para
+ello incluye tanto la regla CSS como el elemento HTML necesario para sólo seleccionar
+ambas palabras y aplicarles sólo a ellas los estilos. */
+
+
+/* Aplica una sombra negra difuminada al título identificado como sombra. Para el color
+utiliza la notación hexadecimal abreviada. */
+
+#sombra{
+   text-shadow: -2px 2px 2px rgb(111, 233, 30) 
+}
  
 
 /* el párrafo primero EM*/
