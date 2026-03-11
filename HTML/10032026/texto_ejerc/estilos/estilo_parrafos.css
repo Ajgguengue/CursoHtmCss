@@ -1,0 +1,178 @@
+@import url(internos.css);
+
+
+-p {
+    text-align: justify;
+}
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+/* laa division 1 */
+.parrafos p{
+    color: #D7143E;
+    text-indent: 5%;
+    text-align: justify; -- Alinea ambos párrafos de forma justificada.
+    
+
+}
+
+/* espaciado entre caracteres  parrafo 1 */
+-#p1{ letter-spacing: 5px; }
+
+
+/* • Aplica una distancia entre palabras en el párrafo segundo de 30 píxeles.
+ */
+-#p2{ letter-spacing: 30px; }
+
+/* Aumenta el interlineado a 1'5 veces el tamaño de fuente en el párrafo primero usando
+valores numéricos. */
+-#p1{ line-height:1.5em}
+
+
+/* • Aplica un interlineado doble en el párrafo segundo expresándolo en porcentaje.
+ */
+-#p2{ line-height:2}
+
+
+/* • Pasa a mayúsculas el texto del título identificado como mayus.
+ */
+ #mayus{     text-transform: uppercase;  }
+
+/* • Pasa a minúsculas el texto del título identificado como minus.
+ */
+ #minus{ text-transform:lowercase;}
+
+/* • Pasa a mayúsculas la primera letra del texto del título identificado como “letra1”.
+ */
+ #letra1{ text-transform: capitalize;}
+
+/* • Coloca el texto del título identificado como i-d con dirección izquierda-derecha.
+ */
+ #i-d{
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }
+
+/* • Coloca el texto del título identificado como d-i con dirección derecha-izquierda.
+ */
+-#d-i{
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    text-decoration: underline;
+}
+
+/* • Ajusta el tamaño minúsculas-mayúsculas al párrafo identificado como p0. Para ello 
+bookman - verdana 0.471 */
+
+#p1{
+    font-size: 18px;
+    font-size-adjust: 0.471
+}
+
+
+/* Observa lo que pasa con los espacios en blanco y los saltos de línea del título nombrado
+como blanco1 
+
+Haz que los espacios en blanco y los saltos de línea del título nombrado como blanco2
+se mantengan tal como aparecen en el código HTML*/
+#blanco1{
+    White-space: pre;
+}
+
+/* Haz que se eliminen los espacios en blanco y los saltos de línea en título nombrado como
+blanco3 y se muestre su contenido en una línea. */
+#blanco3{
+    White-space:nowrap;
+}
+
+
+/* Que el número 2 de la fórmula E=MC2 aparezca como un superíndice. Para ello incluye
+tanto la regla CSS como el elemento HTML necesario para sólo seleccionar el número y
+aplicarle sólo a éste el estilo */
+
+ 
+
+/* el párrafo primero EM*/
+#div1 > #primeroEM {
+ 
+    font-size: 16px;
+    -border: 1px dashed #D7143E;
+    padding-left: 1em;
+}
+
+/* el párrafo segundo EM */
+#div1 > #segundoEM {
+ 
+    font-size: 32px;
+    padding-left: 0.5em;
+}
+/* el párrafo tercero EM */
+#div1 > #terceroEM {
+ 
+    font-size: 8px;
+    padding-left: 2em;
+}
+
+
+/* margen */
+/* #div1 p{
+    margin-left: 1em;
+    border: 1px dashed #D7143E;
+} */
+
+#primeroEM {
+    margin-left: 1em;
+    border: 1px dashed #D7143E;
+}
+
+#segundoEM {
+    margin-left: 0.5em;
+    border: 1px dashed #D7143E;
+}
+
+#terceroEM {
+    margin-left: 2em;
+    border: 1px dashed #D7143E;
+}
+
+/* #div2 p[id$="PT"] {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 16pt;
+    margin-left: 1em;
+}
+#div2 p{
+    padding-left: 1em;
+} */
+
+
+
+h3 {
+    color: rgb(247, 169, 1);
+    font-size: 16px;
+    margin-left: 1em;
+    padding-left: 1em;
+}

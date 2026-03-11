@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo Aspecto Fuentes</title>
+		<style>
+		
+			-p,ul{font-size:20px; font-family:-arial,verdana;}
+			-#p1{font-weight:bold;}
+			-#p2{font-weight:900}
+			-#p1{font-style:italic;}
+			-#p2{text-decoration: underline overline line-through;}
+			-#p2{font-family:arial;font-stretch:condensed;}
+			-#p1{text-transform:uppercase;}
+			-#p2{text-transform:capitalize;}
+			-#p3{text-indent:130px;}
+			-#p1{letter-spacing: 30px;} /*espaciado entre caracteres*/
+			-#p2{letter-spacing: -10px;}
+			-#p3{word-spacing: 20px;}
+			-#p3{text-align:justify}
+			-span{vertical-align:sub;}
+			-#s{vertical-align:20px}
+			#s{vertical-align:-20px}
+			#p1{direction:rtl;}
+			-#p2{text-align:right}
+			-#l1 li{color: red}
+			-#sp1{color: blue}
+			-#p1{text-shadow: 5px 5px red}
+			-#p2{text-shadow: -34px 28px 5px blue}
+			-#p3{line-height:1.5}
+			-#p3{White-space: pre}
+			#p3{White-space: normal}
+			-#p4{font-size-adjust: 0.518}
+			-#p3{font-family:arial}/*Comparación de tamaño fuente Arial con anterior*/
+				 						
+		 </style>
+
+	</head>
+	<body>
+	
+		<p id ="p1">Anatomía de las letras</p>
+
+		<p id ="p2">Anatomía de las letras</p>
+		
+		<p id ="p3">El peso visual es la          capacidad que tiene un elemento de una composición de atraer la mirada 
+		de aquel que mira la imagen. Cuanto más peso visual<span>1</span> tenga algo, 
+		más atraerá la <span id ="s">atención del ojo</span>. ¿Qué hace que algo tenga más peso visual que otro elemento?</p>
+		<div>
+		<p id ="p4">El peso visual es la          capacidad que tiene un elemento de una composición de atraer la mirada 
+		de aquel que mira la imagen. Cuanto más peso visual<span>1</span> tenga algo, 
+		más atraerá la <span id ="s">atención del ojo</span>. ¿Qué hace que algo tenga más peso visual que otro elemento?</p>
+		</div>
+		<div>
+		<ul id="l1">
+		    <li><span id = "sp1">uno</span></li>
+			<li>dos</li>
+		    <li>tres</li>
+		    <li>cuatro</li>
+		</ul>
+		<ul id ="l2">
+		    <li >El peso visual es la capacidad que tiene un elemento de una composición de atraer la mirada 
+			de aquel que mira la imagen. Cuanto más peso visual tenga algo, 
+			más atraerá la atención del ojo. ¿Qué hace que algo tenga más peso visual que otro elemento?uno</li>
+			<li>dos</li>
+		    <li>tres</li>
+		    <li>cuatro</li>
+		</ul>
+		</div>	
+	</body>
+</html>

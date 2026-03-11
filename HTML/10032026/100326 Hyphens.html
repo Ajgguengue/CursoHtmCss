@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+		<head>
+		<meta charset="utf-8">
+		<title>Propiedad hyphens</title>
+		<style>
+		
+			div{width: 100px; border: 1px solid red;}
+			-div{width: 150px; border: 1px solid red;}
+			#none {hyphens: none;}
+			#manual { hyphens: manual;}
+			#auto { hyphens: auto;}
+			
+		</style>
+		</head>
+		<body>
+
+			<h2>Propiedad hyphens</h2>
+
+			<h3>hyphens: none</h3>
+			<div id = "none" lang="es"> <!-- Sin el idioma hyphens no funciona-->
+				<p>
+					En este párrafo hay una palabra muy larga: otorrinolaringología. Se desborda el texto y las palabras no se cortan con guiones.
+				</p>
+			</div>
+
+			<h3>hyphens: manual</h3>
+			<div id = "manual" lang="es"> <!-- Sin el idioma hyphens no funciona-->
+				<p>
+					En este párrafo hay una palabra muy larga: otorrino&shy;laringología. Se le dice al navegador dónde se añadiran los guiones de separación.
+					Éste agregará un guión suave (shy) sólo si es necesario, y un guión fuer&hyphen;te (hyphens) siempre.
+				</p>
+			</div>
+			<h3>hyphens: auto</h3>
+			<div id = "auto" lang="es"> <!-- Sin el idioma hyphens no funciona-->
+				<p>
+					En este párrafo hay una palabra muy larga: otorrinolaringología. Para ahorrar espacio, el navegador añadirá guiones siempre que sea necesario.
+				</p>
+		</div>
+
+		</body>
+</html>
