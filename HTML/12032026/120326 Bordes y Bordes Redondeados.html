@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bordes</title>
+		<meta charset="utf-8">
+	
+		<style>	
+			body{background-color:black; color:white }
+			h1{width:50%;margin:auto;}
+			#b1{border:15px groove gray; }
+			#b2{border:15px ridge gray;}
+			#b3{border:15px inset white;}
+			#b4{border:15px outset white; }
+			#b5{border-width:2px 6px 40px 16px; border-style: solid;}
+			#b6{border-style:solid double dotted dashed;border-width:5px 10px;}
+			#b7{border-style:solid;border-width:5px;border-color:blue yellow green red;}
+			
+			-#b13{width:50%;margin: auto;border-top-style: solid;border-top-width:1px; border-top-color: blue;}
+			#b13{width:50%;margin: auto;border-top: 1px solid blue;}
+			
+			/*Bordes Redondeados*/
+			/* Todas las esquinas iguales con ejes x e y de 5px de longitud*/
+				#b8{border:5px solid yellow;border-radius:5px;}
+			/* Las esquinas superior-izquierda e inferior-derecha con ejes x e y de 5px y las esquinas superior-derecha e inferior-izquierda con ejes x e y de 15px de longitud*/
+				#b9{border:5px solid white;border-radius:5px 15px;} 
+			/* Todas las esquinas iguales con eje x de 5px y eje y de 15px de longitud*/
+				#b9a{border:5px solid white;border-radius:5px / 15px;} 
+			/*Cada esquina con dimensiones diferentes tanto en el eje x como en el y */
+				#b10{border:5px solid white;border-radius:5px 15px 30px 18px/4px 23px 12px 5px;} 
+			/*Cada esquina con dimensiones diferentes pero con medidas iguales tanto en el eje x como en el y */
+				#b11{border:5px solid white;border-radius:5px 15px 30px 18px;} 
+			/* Esquina superior-derecha con medidas distintas en sus ejes x e y */
+				#b12{border:5px solid white;border-top-right-radius:25px 15px;}
+			
+			
+						
+		</style>
+	</head>
+
+	<body>
+	
+	<h1 id ="b1">Borde 3D Groove</h1><br>
+	<h1 id ="b2">Borde 3D Ridge</h1><br>
+	<h1 id ="b3">Borde 3D</h1><br>
+	<h1 id ="b4">Borde 3D</h1><br>
+	<h1 id ="b5">Bordes grosores distintos</h1><br>
+	<h1 id ="b6">Bordes con distintos estilos</h1><br>
+	<h1 id ="b7">Bordes con distintos colores</h1><br>
+	<h1 id ="b8">Bordes redondeados 1</h1><br>
+	<h1 id ="b9">Bordes redondeados 2</h1><br>
+	<h1 id ="b9a">Bordes redondeados 2a</h1><br>
+	<h1 id ="b10">Bordes redondeados 3</h1><br>
+	<h1 id ="b11">Bordes redondeados 4</h1><br>
+	<h1 id ="b12">Bordes redondeados 5</h1><br>
+	<h1 id ="b13">Bordes Variados</h1><br>
+		
+	</body>
+</html>
