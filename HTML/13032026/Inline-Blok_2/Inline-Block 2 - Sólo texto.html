@@ -3,10 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>Display Inline-Block 2</title>
-		
+		<link rel="stylesheet" href="estilos/estilo_pagina.css">
+		<style>
+			@import url(estilos/estilo_parrafos.css);
+			aside {
+				display: inline-block;
+				width: 40%;
+				-height: 100px;
+				border: 1px solid palevioletred;
+				-overflow:auto
+			}
+			main {
+				display: inline-block;
+				-clear: none;
+				width: 40%;
+				height: 400px;
+				
+				overflow:auto
+
+			}
+			#contenedor{
+				border: 1px solid red;
+			}
+
+			
+		</style>
     </head>
     <body>
-    <div id="contenedor1">
+    <div id="contenedor">
 	
         <header>
 			<h1>Betelgeuse, la estrella supergigante "condenada a morir" cuya explosión anticipan los científicos</h1>
@@ -53,6 +77,7 @@
 				apoyado por sus dos perros de caza Canis Maior y Canis Minor peleando con la constelación del Tauro. 
 			</p>
 		</aside>
+		<!-- <div style="background-color: aquamarine; border: 1px solid; height: 100px; width: 100px;"></div> -->
 	
         <footer>
 			<p>
