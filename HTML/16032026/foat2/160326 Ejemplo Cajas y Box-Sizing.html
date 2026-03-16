@@ -1,0 +1,100 @@
+<html>
+   <head>
+      <title>Box-Sizing | Modelo de cajas y textos</title>
+      <meta charset="UTF-8" />
+ 
+	<style>
+			
+		/* Cajas. */
+		
+		#d1{
+			border:1px solid red;
+			width:200px;
+			margin:5px;
+		}
+		h3{
+			-text-align:center;
+			border:1px solid green;
+			-margin:10px;
+			-padding:10px;
+		}
+		
+		#lista1{
+			list-style-type:none;
+			-border:1px solid blue;
+			-margin:0;
+		}
+		
+				
+		#uno /* Anchura total: 300+20+20+5+5 = 300, es así porque la anchura es realidad 250 px. */
+		{
+		
+			border: 5px solid red;
+			width: 300px;
+			padding: 20px;
+			margin:10px;
+			box-sizing:border-box;
+		}
+		#dos /* Anchura total: 300+20+20+5+5 = 350 px */
+		{
+		
+			border: 5px solid red;
+			width: 300px;
+			padding: 20px;
+			margin:10px;
+			box-sizing:content-box;
+		}
+		
+		#contenedor
+		{
+			border: 5px solid red;
+			width: 300px;
+			margin-left:10px;
+			
+		}
+			#contenido
+		{
+			border: 5px solid blue;
+			width: 300px;
+			padding: 20px;
+			-box-sizing:content-box; /* Anchura total: 300+20+20+5+5 = 350 px */
+			-box-sizing:border-box; /* Anchura total: 300+20+20+5+5 = 300 px */
+		}
+		
+	
+	</style> 
+   </head>
+ 
+   <body>   
+
+		<div id ="d1">
+			<h3>Título de la lista:</h3>
+			<ul id="lista1">
+				<li>Opción A.</li>
+				<li>Opción B.</li>
+				<li>Opción C.</li>
+			</ul>
+		</div>
+				
+		<div id ="uno">
+		
+			<p>Caja 1</p>
+			
+		</div>
+		<div id ="dos">
+		
+			<p>Caja 2</p>
+			
+		</div>
+		
+		<div id = "contenedor">
+		
+			<p>Contenedor</p>
+			<div id = "contenido">
+				<p>Contenido</p>
+			</div>
+			
+		</div>
+   
+	</body> 
+</html>

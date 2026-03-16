@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tipos de Posicionamiento</title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		div {
+			width: 200px;
+			height: 200px;
+			border: 1px solid;
+			background-color: aquamarine;
+		}
+
+		h2 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 30px;
+		}
+
+		/* 
+			• Colocar la caja c3 en el centro de la pantalla sin rellenar con otras el espacio 
+			 */
+		-.c3 {
+			position: relative;
+			top: calc(50% - 100px);
+			/* 50% de la altura de la pantalla - mitad de la altura (200/2) */
+			left: calc(50% - 100px);
+			/* 50% del ancho de la pantalla - mitad del ancho (400/2) */
+
+		}
+
+		/* Colocar cada caja en una esquina usando como punto de referencia la ventana
+del navegador. */
+		-.c1 {
+			position: absolute;
+			-top: 0;
+			-left: 0;
+			-top: 0;
+			-left: calc(100% - 100px);
+			-top: calc(100% - 100px);
+			-left: calc(100% - 100px);
+			-top: calc(100% - 100px);
+			-left: 0;
+		}
+
+		-.c2 {
+			position: absolute;
+			-top: 0;
+			-left: 0;
+			top: 0;
+			left: calc(100% - 200px);
+			-top: calc(100% - 200px);
+			-left: calc(100% - 200px);
+			-top: calc(100% - 200px);
+			-left: 0;
+		}
+
+		-.c3 {
+			position: absolute;
+			-top: 0;
+			-left: 0;
+			-top: 0;
+			-left: calc(100% - 200px);
+			top: calc(100% - 200px);
+			left: calc(100% - 200px);
+			-top: calc(100% - 200px);
+			-left: 0;
+		}
+
+		-.c4 {
+			position: absolute;
+			-top: 0;
+			-left: 0;
+			-top: 0;
+			-left: calc(100% - 200px);
+			-top: calc(100% - 200px);
+			-left: calc(100% - 200px);
+			top: calc(100% - 200px);
+			left: 0;
+		}
+
+		/* Colocar las cajas c1 y c2 en la parte superior 
+			izquierda de la pantalla, una a continuación de la otra,
+			e igualmente, hacer lo mismo con las cajas c3 y c4 en la
+			parte superior derecha. Ubicar cada par de cajas 
+			en vertical.
+ 			*/
+		-.c1,
+		-.c2 {
+			-position: absolute;
+			position: relative;
+
+		}
+
+		-.c2 {
+			-position: absolute;
+			-top: 0px;
+			-left: 200px;
+			position: relative;
+			top: -200px;
+			left: 200px;
+
+		}
+
+		-.c3,
+		-.c4 {
+			-position: absolute;
+			position: relative;
+
+		}
+
+		-.c3 {
+			-position: absolute;
+			-top: 0px;
+			-left: 400px;
+			position: relative;
+			top: -400px;
+			left: 400px;
+
+		}
+
+		-.c4 {
+			-position: absolute;
+			-top: 200px;
+			-left: 400px;
+			position: relative;
+			top: -400px;
+			left: 400px;
+		}
+
+		/* Colocar las cajas c1 y c2 en la parte superior izquierda
+		de la pantalla, una a continuación de la otra, e igualmente,
+		hacer lo mismo con las cajas c3 y c4 en la parte superior 
+		derecha. Ubicar cada par de cajas en horizontal. */
+		-.c1,
+		-.c2 {
+			-position: absolute;
+			position: relative;
+
+		}
+
+		-.c1 {
+			-position: absolute;
+			-top: 0px;
+			-left: 200px;
+			position: relative;
+			top: 0px;
+			left: calc(100% - 200px) ;
+
+		}
+		-.c2 {
+			-position: absolute;
+			-top: 0px;
+			-left: 200px;
+			position: relative;
+			top: -200px;
+			left: calc(100% - 400px) ;
+
+		}
+
+		-.c3,
+		.c4 {
+			-position: absolute;
+			position: relative;
+
+		}
+
+		-.c3 {
+			-position: absolute;
+			-top: 0px;
+			-left: 400px;
+			position: relative;
+			top: -400px;
+			left: calc(100% - 600px) ;
+
+		}
+
+		-.c4 {
+			-position: absolute;
+			-top: 200px;
+			-left: 400px;
+			position: relative;
+			top: -400px;
+			left: calc(100% - 600px) ;
+		}
+
+		/* • Variar el ejercicio anterior para conseguir
+		el mismo efecto con float colocando cada par de cajas
+		a izquierda o derecha en horizontal. */
+
+		.c1 {
+			float: right;
+		}
+		.c2{
+			float: right;
+		}
+		.c3{
+			float: right;
+		}
+		.c4{
+			-float: right;
+			position: absolute;
+			top: 200px;
+			left: calc(100% - 600px) ;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="c1">
+		<h2>C1</h2>
+
+	</div>
+	<div class="c2">
+		<h2>C2</h2>
+	</div>
+
+	<div class="c3">
+		<h2>C3</h2>
+	</div>
+	<div class="c4">
+		<h2>C4</h2>
+	</div>
+
+</body>
+
+</html>

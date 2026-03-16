@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maquetación con Float</title>
+		<link rel="stylesheet" href="estilos/estilo_pagina.css">
+        <style>
+			@import url(estilos/estilo_parrafos.css);
+
+			p,h1{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			div .izquierda{
+				margin: 10px;
+				float: left;
+				-display: inline-block;
+				height: 480px;
+				width: 150px;
+				border: 1px solid black;
+				-border-right: 1px solid ;
+			}
+			
+			/* nav{
+				-margin: 10px;
+				margin-top: 20px;
+				border-top: 1px solid;
+			} */
+
+			div .izquierda nav ul li {
+				list-style: none;
+				margin: 5px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 16pt;
+			}
+			ul{
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+
+			div .derecha{
+				-float: left ;
+				display: inline-block;
+				height: 480px;
+				margin: 10px;
+				-border-left: 1px solid green;
+				-border-top: 1px solid green;
+				border: 1px solid black
+
+				
+			}
+
+			.derecha p{
+				-margin: 10px;
+				
+			}
+
+			footer{
+				clear: both;
+			}
+
+		
+		</style>
+				          
+    </head>
+    <body>
+		
+		<header>
+			<h1>las mari</h1>
+		</header>
+		<main>
+		<div class="contenedor">
+
+			<div class="izquierda">
+				<img src="mariposa.png" width = "100px" height ="100px" alt ="Mariposa">
+				<nav>
+					<ul> 
+							<li><a href="#">Dibujos</a></li>
+							<li><a href="#">Fotos</a></li>
+							
+					</ul>
+				</nav>
+			</div>
+		
+		
+	
+		
+			
+			<div class="derecha">
+				<h1>Mariposas</h1>
+				<p>
+					Los lepidópteros (Lepidoptera, del griego «lepis», escama, y «pteron», ala) son un orden de insectos holometábolos,
+					casi siempre voladores, conocidos comúnmente como mariposas; las más conocidas son las mariposas diurnas, pero la
+					mayoría de las especies son nocturnas (polillas, esfinges, pavones, etc.) y pasan muy inadvertidas. Sus larvas se
+					conocen como orugas y se alimentan típicamente de materia vegetal, con lo que algunas especies pueden ser plagas muy
+					dañinas para la agricultura. Muchas especies cumplen el papel de polinizadoras de plantas y cultivos.
+				</p>
+				<p>
+					Este taxón representa el segundo orden con más especies entre los insectos (siendo superado solamente por el orden 
+					Coleoptera); de hecho, cuenta con más de 165 000 especies1​ clasificadas en 127 familias y 46 superfamilias.2​ La mariposa
+					diurna más grande que existe es la Ornithoptera alexandrae hembra, que puede llegar a tener 31 cm de envergadura (el macho
+					es un poco más pequeño), vive al sudeste de Nueva Guinea. El lepidóptero más grande que la ciencia ha descubierto es la
+					conocida mariposa Atlas o polilla Atlas (Attacus atlas), originaria de las zonas tropicales del sudeste asiático y es un
+					heterocero (polillas o mariposas nocturnas) aunque es de hábitos diurnos. 
+				</p>
+			
+				
+			</div>
+		</main>
+		</div>
+		<footer>
+
+		</footer>	
+			
+     
+       
+    </body>
+</html>
