@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .divisiones{border:1px solid navy; width:25%; height:20vh;margin:10px;text-align:center;font-size:40px}
+        .contenedor2{border:1px solid navy;width:90%;margin: auto;height:40vh;}
+        #p1{text-align:justify;font-family:sans-serif;width:25%;margin:10px; }
+        #foto{width:25%;margin:10px}
+        /* Todas las divisiones flotan a la izquierda.*/
+            /*.div1,.div2,.div3{float:left;}*/ 
+        /* Sólo la división 1 flota a la izquierda, el resto se ven forzadas a desplazarse.*/
+            /*.div1{float:left;}*/ 
+        /* Sólo la división 2 flota a la izquierda, el resto se ven forzadas a desplazarse.*/
+            /*.div2{float:left;} */
+        /* Sólo la división 3 flota a la derecha. Las divisiones 1 y 2 se mantienen en su posición.*/
+            /*.div3{float:right;} */
+        /* La división 1 flota a la izquierda y las divisiones 2 y 3 se mantienen en su posición.*/
+            /*.div1{float:left;} 
+            .div2{clear:both;} */
+        /* La divisiones 1 y 2 flotan a la izquierda y la división 3 se mantiene en su posición.*/
+            .div1, .div2{float:left;} 
+            .div3{clear:both;} 
+        /*Imagen flota a la izquierda y párrafo a la derecha.*/
+
+            #foto{float:left;}
+            #p1{float:right;}
+    </style>
+</head>
+<body>
+    <div class = "contenedor1">
+        <div class="divisiones div1">UNO</div>
+        <div class="divisiones div2">DOS</div>
+        <div class="divisiones div3">TRES</div>
+    </div>
+    <hr>
+    <div class = "contenedor2">
+        <img id="foto" src="avion.jpg" alt ="Avioneta">
+        <p id="p1">
+            Una avioneta es, coloquialmente, un avión pequeño y de poca potencia, generalmente diseñado para pocos pasajeros y vuelos de corto alcance. Técnicamente, no es un término oficial en aeronáutica, prefiriéndose denominaciones como "aeronave ligera" o "avión pequeño". Suelen usarse para recreación, instrucción o transporte ligero.
+        </p>
+    
+    </div>
+</body>
+</html>

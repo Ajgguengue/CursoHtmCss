@@ -6,9 +6,9 @@ header {
 }
 
 main {
-    margin: 5px;
+    margin: auto 5px ;
     border: 2px dashed rgb(60, 185, 22);
-    padding: 5px;
+    
 }
 
 footer {
@@ -29,7 +29,7 @@ h6 {
     
     margin: 0px;
     padding: 0px;
-    
+    box-sizing: border-box;
     
 }
 #contenedor {

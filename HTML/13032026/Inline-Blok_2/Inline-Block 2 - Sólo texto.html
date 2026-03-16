@@ -6,25 +6,41 @@
 		<link rel="stylesheet" href="estilos/estilo_pagina.css">
 		<style>
 			@import url(estilos/estilo_parrafos.css);
+			
+
+			#contenedor{
+				border: 1px solid red;				
+			}
+
 			aside {
 				display: inline-block;
-				width: 40%;
-				-height: 100px;
-				border: 1px solid palevioletred;
-				-overflow:auto
+				-float:left;
+				-display:table-cell;			
+				overflow:auto;
+
+				height: 200px;
+				width: 38%;
+				border: 2px solid palevioletred;
 			}
 			main {
 				display: inline-block;
-				-clear: none;
-				width: 40%;
-				height: 400px;
+				-float:left;
+				-display:table-cell;
+				-display: table-row;
+				overflow:auto;
+
+				width: 58%;
+				height: 200px;
 				
-				overflow:auto
+				
 
 			}
-			#contenedor{
-				border: 1px solid red;
-			}
+			footer{
+				-clear:both;
+				text-align: left;
+			} 
+			 
+			
 
 			
 		</style>

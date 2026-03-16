@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #nav1 li {
+            list-style: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        #nav2 li {
+            list-style: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        a {
+            font-family: Verdana, 'sans-serif';
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        #nav1 a:hover {
+            color: rgb(236, 202, 87);
+            text-decoration: underline;
+            text-shadow: 1px 0px 10px white;
+            
+        }
+
+        #nav2 a:hover{
+            width: 1.5em;
+        }
+
+
+        #bar1, #bar2 {
+            background-color: saddlebrown;
+            height: 40px;
+            text-align: center;
+            border-radius: 10px 10px 10px 10px ;
+            box-shadow: 0px 2px 5px 0px gray;
+        }
+
+        #nav2 li img{
+            width: 20px;
+        }
+
+
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>barra</h1>
+        <h1>Barras</h1>
     </header>
     <nav>
-        <ul>    
-            <li>Ofertas</li>
-            <li>Servicios</li>
-            <li>Tienda</li>
-            <li>Contacto</li>
-            <li>Preguntas-Frecuentes</li>
-        </ul>
+        <div id="bar1">
+            <ul id="nav1">
+                <li><a href="#">Ofertas</a> </li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas-Frecuentes</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    
+    <nav>
+        <div id="bar2">
+            <ul id="nav2">
+                <li><a href="#"><img src="Iconos/actualizar.ico" alt="actualizar" title="Actualizar"></a></li>
+                <li><a href="#"><img src="Iconos/cancelar.ico" alt="cancelar" title="Cancelar"></a></li>
+                <li><a href="#"><img src="Iconos/check.ico" alt="check" title="Check"></a></li>
+                <li><a href="#"><img src="Iconos/deshacer.ico" alt="deshacer" title="Deshacer"></a></li>
+                <li><a href="#"><img src="Iconos/flecha.ico" alt="flecha" title="Flecha"></a></li>
+                <li><a href="#"><img src="Iconos/mas.ico" alt="más" title="Más"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
 </body>
+
 </html>
+
+
+
