@@ -1,0 +1,39 @@
+header {
+    margin: 5px;
+    -height: 100px;
+    border: 2px dashed rgb(125, 25, 54);
+    background-color: rgb(203, 243, 243);
+}
+
+main {
+    margin: auto 5px ;
+    border: 2px dashed rgb(60, 185, 22);
+    
+}
+
+footer {
+    margin: 5px;
+
+    height: 70px;
+    border: 2px dashed rgb(125, 25, 54);
+    background-color: rgb(203, 243, 243);
+}
+
+h6 {
+    border: 0px solid black;
+    height: 10px;
+    margin: 5px;
+}
+
+* {
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+#contenedor {
+    width: 90vw;
+    margin: auto;
+    
+}

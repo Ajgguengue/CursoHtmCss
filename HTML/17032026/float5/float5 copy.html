@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo_pagina.css">
+    <title>hotel</title>
+    <style>
+        @import url(estilos/estilo_parrafos.css);
+
+        #contenedor {
+            height: 600px;
+            width: 1000px;
+            margin: auto;
+        }
+
+        #contenedor * {
+            -border: 1px solid;
+            
+        }
+        
+        #titulo1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(145, 124, 9);
+            text-shadow: 1px 1px 2px gray;
+        }
+        
+       
+        .tarjeta {
+            float: left;
+            height: 220px;
+            -width: 350px;
+            width: 40%;
+            border: 1px solid red;
+            margin: 10px;
+            box-shadow: 5px 5px 5px gray;
+            background-color: rgb(236, 233, 231);
+            
+        } 
+        
+        .categorias img{
+            width: 40px;
+            height: 40px;
+            -border: 1px solid;
+            vertical-align: middle;
+        }
+
+
+        ul {
+            -list-style-type: none;
+            padding-left: 0px;
+        }
+
+        ul li {
+            -list-style-type: none;
+            margin: 5px;
+        }
+        .categorias{
+            float: left;
+            height: 50px;
+            -width: 330px;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 20px;
+
+            font-family: 'Gill Sans', sans-serif;
+            font-size: 14pt;
+            font-weight: bold;
+            color: rgb(116, 90, 58);
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .caracteristicas {
+            float: left;
+            width: 80%;
+            margin-top: 10px;
+            margin-left: 50px;
+            -position: relative;
+            -left: 50px;
+            -top: 30px;
+            -border: 1px solid;
+
+            font-family: 'Gill Sans', sans-serif;
+            font-style: italic;
+            font-size: 12pt;
+            font-weight: bold;
+
+
+        }
+        .precios {
+            float: left;
+            width: 90%;
+            text-align: right;
+            margin-top: 20px;
+            margin-left: 10px;
+
+            -margin-right: 40px;
+            -margin-left: 40px;
+            -text-align: left;
+            
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+
+        /* #titulo1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(145, 124, 9);
+            text-shadow: 1px 1px 2px gray;
+        }
+
+        .tarjeta {
+            height: 200px;
+            width: 350px;
+            border: 1px solid red;
+            margin: 10px;
+            box-shadow: 5px 5px 5px gray;
+            background-color: rgb(236, 233, 231);
+        }
+
+        ul {
+            -list-style-type: none;
+            padding-left: 0px;
+        }
+
+        ul li {
+            -list-style-type: none;
+            margin: 5px;
+        }
+
+        .categorias {
+            width: 260px;
+            position: relative;
+            left: 10px;
+            top: 10px;
+            -border: 1px solid;
+
+            font-family: 'Gill Sans', sans-serif;
+            
+            font-size: 14pt;
+            font-weight: bold;
+            color: rgb(116, 90, 58);
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .categorias img{
+            width: 40px;
+            height: 40px;
+            -border: 1px solid;
+            vertical-align: middle;
+        }
+
+        .caracteristicas {
+            width: 260px;
+            position: relative;
+            left: 50px;
+            top: 30px;
+            -border: 1px solid;
+
+            font-family: 'Gill Sans', sans-serif;
+            font-style: italic;
+            font-size: 12pt;
+            font-weight: bold;
+
+        }
+
+        .precios {
+            position: relative;
+            top: 45px;
+            left: calc(100% - 180px);
+            -border: 1px solid;
+            
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* 
+        vertical-alig
+        #caja1 , #caja2 {
+            float: left;
+        }
+
+        #caja3 , #caja4 {
+            float: left;
+            -float: right;
+        } */
+
+        /* #caja1 {
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+
+        #caja2 {
+            position: relative;
+            top: 120px;
+            left: 40px;
+        }
+
+        #caja3 {
+            position: relative;
+            top: -380px;
+            left: 520px;
+
+        }
+
+        #caja4 {
+            position: relative;
+            top: -300px;
+            left: 520px;
+
+        } */ */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>El Hotel</h1>
+    </header>
+    <main>
+
+        <div id="contenedor">
+            <h1 id="titulo1">Hotel Mediterraneo</h1>
+            <div class="tarjeta" id="caja1">
+                
+                <div class="categorias" id="t1"> <img src="imagenes/cama.png" id="icono" alt=""> Individual </div>
+                <div class="caracteristicas">
+                    <ul>
+                        <li>7 m2 útiles</li>
+                        <li>Vista a zonas interiores</li>
+                        <li>Posibilidad cama supletoria</li>
+
+                    </ul>
+
+                </div>
+                <span class="precios" id="t1"> 40,00 € / noche </span>
+            </div>
+
+            <div class="tarjeta" id="caja2">
+                <div class="categorias" id="t1"><img src="imagenes/hotel.png" id="icono" alt=""> Doble Estándard </div>
+                <div class="caracteristicas">
+                    <ul>
+                        <li>12 m² útiles</li>
+                        <li>Pequeño balcón</li>
+                        <li>Cama doble o individual</li>
+
+                    </ul>
+
+                </div>
+                <span class="precios" id="t1"> 60,00 € / noche </span>
+            </div>
+
+            <div class="tarjeta" id="caja3">
+                <div class="categorias" id="t1"><img src="imagenes/campana.png" id="icono" alt=""> Doble Superior </div>
+                <div class="caracteristicas">
+                    <ul>
+                        <li>15 m² útiles</li>
+                        <li>Terraza vistas al mar</li>
+                        <li>Cama doble o individual</li>
+
+                    </ul>
+
+                </div>
+                <span class="precios" id="t1"> 80,00 € / noche </span>
+            </div>
+
+            <div class="tarjeta" id="caja4">
+                <div class="categorias" id="t1"><img src="imagenes/ubicacion.png" id="icono" alt=""> Suite </div>
+                <div class="caracteristicas">
+                    <ul>
+                        <li>Terraza  </li>
+                        <li>Salón 12 m2</li>
+                        <li>Todo Incluido</li>
+
+                    </ul>
+
+                </div>
+                <span class="precios" id="t1"> 200,00 € / noche </span>
+            </div>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <h6>Angel tarjetas Hotel</h6>
+    </footer>
+
+</body>
+
+</html>

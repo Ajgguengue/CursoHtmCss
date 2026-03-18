@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabla con display:table 1</title>
+	<meta charset="utf-8">
+	<style>
+		*{box-sizing:border-box;margin:0;padding:0;}
+
+		/* Maquetación con tabla y contenedores semánticos */
+		
+		#div1{margin:auto;border:1px solid #000;width:50%;}
+		#tabla2{display:table;width:100%;border-spacing:2.5px}
+		#fila1{display:table-row;}
+		
+		header,footer{
+			height:100px;
+			margin:5px ;border:1px solid #000;
+		}
+		main,aside{
+			display:table-cell;
+			height:300px;
+			border:1px solid #000;
+		}
+
+		main{width:70%;}
+		aside{width:30%;}
+		
+		h1{	text-align:center;
+			padding-top:50px;}
+				
+	</style>
+</head>
+<body>
+	
+
+	
+		<h2 >Tabla Display</h2>
+		<div id ="div1">
+			<header id = "cabecera">
+				<h1>Cabecera</h1>
+			</header>
+			<div id = "tabla2">
+				<div id = "fila1">
+					<main id = "principal">
+						<h1>División Principal</h1>
+					</main>
+					<aside id = "lateral">
+						<h1>División Lateral</h1>
+					</aside>
+				</div>
+			</div>
+			<footer id = "pie">
+				<h1>Pie</h1>
+			</footer>
+		</div>
+		
+
+	
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+			/* Display con Tablas 1. */
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			header,
+			main,
+			aside,
+			footer {
+				padding: 10px;
+				border: 1px solid #000;
+				font-family: sans-serif;
+			}
+
+			header {
+				height: 80px;
+				background-color: #555;
+			}
+
+			h1,
+			footer p {
+				font-size: 18px;
+				color: orange;
+				text-align: center;
+			}
+
+			p {
+				font-size: 14px;
+				text-align: justify;
+			}
+
+			.contenedor1 {
+				width: 60%;
+				margin: 20px auto;
+			}
+
+			.contenedor-tabla {
+				display: table;
+			}
+
+			h3 {
+				display: table-caption;
+				text-align: center;
+				font-weight: bold;
+				font-family: impact, sans-serif;
+				color: maroon;
+			}
+
+			.contenedor2 {
+				display: table-row;
+			}
+
+			.principal {
+				display: table-cell;
+				width: 60%;
+			}
+
+			.lateral {
+				display: table-cell;
+				width: 40%;
+				vertical-align: middle;
+			}
+
+			main {
+				height: 200px;
+				background-color: khaki;
+				overflow: auto;
+			}
+
+			aside {
+				height: 200px;
+				background-color: PowderBlue;
+				overflow: auto;
+			}
+
+			footer {
+				height: 60px;
+				background-color: #555;
+			}
