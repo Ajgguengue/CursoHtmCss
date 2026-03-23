@@ -1,0 +1,43 @@
+p, h1, h6 {
+    text-align: justify;
+    margin: 5px;
+    font-family: sans-serif;
+
+}
+
+
+a:focus {
+    color: #D74B14;
+    text-decoration: underline;
+    border: 1px dashed #da1c1c;
+}
+
+a {
+    color: #D7AD14;
+    -text-decoration: none;
+}
+
+a:hover {
+    color: #D7143E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0c0666;
+    text-decoration: none;
+}
+
+
+h3 {
+    color: rgb(247, 169, 1);
+    font-size: 16px;
+    -margin-left: 1em;
+    -padding-left: 1em;
+    text-align: center;
+}
+

@@ -1,0 +1,46 @@
+
+/*Sprites. Imágenes cambiantes independientes usando una imagns única. Coordenadas en píxeles. */
+
+    div {
+        display: inline-block;
+    }
+
+    h2 {
+        color: navy;
+    }
+
+    #uno {
+        width: 64px;
+        height: 64px;
+        background: url("../imagenes/css_sprites.png") -10px -10px;
+    }
+
+    #dos {
+        width: 64px;
+        height: 64px;
+        background: url("../imagenes/css_sprites.png") -94px -10px;
+    }
+
+    #tres {
+        width: 64px;
+        height: 64px;
+        background: url("../imagenes/css_sprites.png") -10px -94px;
+    }
+
+    #uno:hover {
+        width: 64px;
+        height: 64px;
+        background: url("../imagenes/css_sprites.png") -94px -94px;
+    }
+
+    #dos:hover {
+        width: 64px;
+        height: 64px;
+        background: url("../imagenes/css_sprites.png") -178px -10px;
+    }
+
+    #tres:hover {
+        width: 64px;
+        height: 64px;
+        background: url("../imagenes/css_sprites.png") -178px -94px;
+    }

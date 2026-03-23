@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprites1</title>
+    <link rel="stylesheet" href="estilos/estilo_pagina.css">
+    <style>
+        @import url(estilos/estilo_parrafos.css);
+
+        #principal {
+            width: 80%;
+            height: 400px;
+            -margin: 5px auto;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        #principal h1 {
+            font-family: sans-serif;
+            text-align: center;
+            color: greenyellow
+        }
+
+        .img_rs {
+            - height: 300px;
+            width: calc(20% - 10px);
+            height: calc(20% - 10px);
+            margin: 2px;
+            border: 1px solid black;
+            -float: left;
+            display: inline-block;
+        }
+
+        -#rs1 {
+
+            -width: 304px;
+            height: 305px;
+            background: url('css_sprites.png') -10px -1074px;
+
+        }
+
+        -#rs2 {
+            -width: 305px;
+            height: 305px;
+            background: url('css_sprites.png') -1074px -542px;
+
+        }
+
+        -#rs3 {
+
+            -width: 304px;
+            height: 305px;
+            background: url('css_sprites.png') -334px -1074px;
+
+        }
+
+        -#rs4 {
+
+            -width: 304px;
+            height: 305px;
+            background: url('css_sprites.png') -658px -1074px;
+
+        }
+
+        -#rs5 {
+
+            /* width: 304px; height: 305px; */
+            width: 10%;
+            width: 10%;
+            background: url('imagenes/rs_sprite.png') -982px -1074px;
+
+            background-repeat: no-repeat;
+
+        }
+
+        /* codigo de ccs sprite */
+        /* sin color */
+        .bg-Facebook {
+            width: 304px;
+            height: 305px;
+            
+            background: url(imagenes/rs_sprite.png) -10px -10px; 
+        
+            
+        }
+
+
+        .bg-Instagram {
+            width: 304px;
+            height: 305px;
+            background: url('imagenes/rs_sprite.png') -1306px -10px;
+        }
+
+
+        .bg-Twitter {
+            width: 304px;
+            height: 305px;
+            background: url('imagenes/rs_sprite.png') -334px -10px;
+        }
+
+
+        .bg-Whatsapp {
+            width: 304px;
+            height: 305px;
+            background: url('imagenes/rs_sprite.png') -658px -10px;
+        }
+
+
+        .bg-youtube {
+            -width: 304px;
+            -height: 305px;
+            background: url('imagenes/rs_sprite.png') -982px -10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* con colores */
+
+        .bg-Facebook:hover {
+            -width: 512px;
+            -height: 512px;
+            /* background: url('imagenes/rs_sprite.png') -10px -10px; */
+            background: url('imagenes/rs_sprite.png') -1661px -10px ;
+
+            width: 304px;
+            height: 305px;
+        }
+
+
+        .bg-Instagram:hover {
+            -width: 512px;
+            -height: 512px;
+            background: url('imagenes/rs_sprite.png') -2040px -05px;
+            width: 304px;
+            height: 305px;
+        }
+
+
+        .bg-Twitter:hover {
+            -width: 512px;
+            -height: 512px;
+            background: url('imagenes/rs_sprite.png') -2418px -06px;
+            width: 304px;
+            height: 305px;
+        }
+
+
+        .bg-Whatsapp:hover {
+            -width: 512px;
+            -height: 512px;
+            background: url('imagenes/rs_sprite.png') -2780px -06px;
+                        width: 304px;
+            height: 305px;
+        }
+
+
+        .bg-youtube:hover {
+            -width: 512px;
+            -height: 512px;
+            -display: inline-block;
+            background: url('imagenes/rs_sprite.png') ;
+            background-position: -3169px -06px; /* Ejemplo */
+           -width: 304px;
+           -height: 305px;
+
+            -width: 100px;
+            -height: 100px;
+            
+/* <div class="sprite" style="background-position:32px 64px; ">&nbsp;</div> */
+
+            background-repeat: no-repeat;
+            
+            background-size: 300px 100px; 
+            -transform:scale(50% );
+            -background-position: -3169px -06px; /* Ejemplo */
+        }
+
+        .mi-sprite {
+            background-image: url('sprite-largo.png');
+            width: 100px;
+            height: 100px;
+            /* Escalar el total de 900px a 300px para que cada icono mida 100px */
+            background-size: 300px auto; 
+            /* Posición ajustada a la nueva escala */
+            background-position: -50px 0; /* Ejemplo */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <header>
+            <h1>Sprites </h1>
+        </header>
+        <main>
+            <div id="principal">
+                <h1>Imágenes Sprite </h1>
+
+
+
+
+                <div id="rs1" class="img_rs bg-Facebook">
+
+
+                </div>
+                <div id="rs2" class="img_rs bg-Instagram">
+
+                </div>
+                <div id="rs3" class="img_rs bg-Twitter">
+
+                </div>
+                <div id="rs4" class="img_rs bg-Whatsapp">
+
+                </div>
+                <div id="rs5" class="img_rs bg-youtube">
+
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h6>Angel Gonzalrz Sprite 1</h6>
+        </footer>
+    </div>
+</body>
+
+</html>

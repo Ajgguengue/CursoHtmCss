@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Css</title>
+    <link rel="stylesheet" href="estilos/estilo_pagina.css">
+    <style>
+        @import url(estilos/estilo_parrafos.css);
+        img{
+            width: 300px;
+            margin: 5px;
+            -float: left;
+        }
+
+        header{
+            background-color: rgb(41, 39, 39);
+        }
+        #tcabecera{
+            font-family: Verdana, sans-serif;
+            color: aliceblue;
+            margin: 5px;
+        }
+        main{
+            background-color: rgb(189, 189, 189);
+        }
+
+        #principal{
+            width: 938px;
+            height: 930px;
+            margin: auto;
+
+        }
+        #foto1:hover{filter:blur(3px); }
+        #foto2:hover{filter:grayscale(75%); }
+        #foto3:hover{filter:sepia(50%); }
+        #foto4:hover{filter:saturate(250%); }
+        #foto5:hover{filter:hue-rotate(90deg); }
+        #foto6:hover{filter:invert(90%); }
+        #foto7:hover{filter: brightness(50%); }
+        #foto8:hover{filter: contrast(200%) drop-shadow(5px 5px 2px rgb(160, 41, 41));}
+        #foto9:hover{transform: translate(10px); }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1 id="tcabecera">Imagenes Css</h1>
+        </header>
+        <main>
+            <h1>Imágenes, tipos de filtros y transformaciones</h1>
+            <div id="principal">
+
+                <img id="foto1" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto2" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto3" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto4" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto5" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto6" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto7" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto8" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+                <img id="foto9" src="imagenes/camion.jpg" alt="un camion en caricatura" title="camion">
+            </div>
+            
+
+        </main>
+        <footer>
+            <h6>Angel Gonzalez Imagenes</h6>
+        </footer>
+    </div>
+    
+</body>
+</html>

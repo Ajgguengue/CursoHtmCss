@@ -1,0 +1,34 @@
+    
+    
+    /*Sprites. Imágenes independientes usando una imagns única. Coordenadas en píxeles. */
+
+        div{
+            display:inline-block;
+        }
+        h2{
+            color:navy;
+        }
+        #bebida {
+            width: 64px; height: 64px;
+            background: url("../imagenes/css_sprites.png") -10px -10px;
+        }
+        #dvd {
+            width: 64px; height: 64px;
+            background: url("../imagenes/css_sprites.png") -94px -10px;
+        }
+        #guitarra {
+            width: 64px; height: 64px;
+            background: url("../imagenes/css_sprites.png") -10px -94px;
+        }
+        #mariposa {
+            width: 64px; height: 64px;
+            background: url("../imagenes/css_sprites.png") -94px -94px;
+        }
+        #sol {
+            width: 64px; height: 64px;
+            background: url("../imagenes/css_sprites.png") -178px -10px;
+        }
+        #tomate {
+            width: 64px; height: 64px;
+            background: url("../imagenes/css_sprites.png") -178px -94px;
+        }
