@@ -1,0 +1,18 @@
+* {
+    color: #1D0CB6;
+    background-color: #F0F0F0;
+}
+
+ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+ul li:nth-child(2)::after{
+    content: " ****";
+}
+
+#mensage::after{
+    content: " Normal Text: WCAG AAA:Pass, Large Text: WCAG AAA:Pass, Graphical Objects: WCAG AA:  Pass ";
+}
+
+

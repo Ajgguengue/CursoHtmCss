@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Login</title>
+    <style>
+        #centro{
+            width: 70%;
+            margin: auto;
+            -border: 1px solid rgb(19, 85, 226);
+        }
+        h1{
+            -border: 1px solid rgb(19, 85, 226);
+            text-align: center;
+        }
+        form {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(206, 184, 184);
+            border: 1px solid rgb(143, 170, 228);
+            box-shadow: 2px 2px ;
+        }
+
+        #d_campo {
+            -border: 1px solid red;
+            margin: 10px;
+
+        }
+
+        #d_campo label {
+            -border: 1px solid;
+            float: left;
+            width: 30%;
+            margin: auto 5px;
+
+        }
+
+        #d_boton p{
+            -border: 1px solid red;
+            margin: 10px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="centro">
+        <h1>Inicio de Sesion</h1>
+        <form action="" name="login" method="post">
+            <fieldset>
+                <div id="d_campo">
+                    <label for="usuario">
+                        Usuario:
+                    </label>
+                    <input type="text" name="usuario" id="usuario" required>
+                </div>
+                <div id="d_campo">
+                    <label for="contrasena">
+                        Contraseña: 
+                    </label>
+                    <input type="password" name="contrasena" id="contrasena" required>
+                </div>
+                <div id="d_boton">
+                    <p><button type="submit"> Identificarse </button></p>
+                </div>
+                
+            </fieldset>
+            <div id="d_boton">
+                    <a href="../index.html">Atrás</a>
+            </div>
+        </form>
+        
+    </div>
+
+</body>
+
+</html>

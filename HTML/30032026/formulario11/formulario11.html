@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 11</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+
+    <div id="centro">
+
+        <div id="d_form11">
+
+            <h3>Suscripcion electronica a nuestro boletin</h3>
+
+            <form action="" method="post">
+                <fieldset id="fset01">
+                    <legend> Datos Personales: </legend>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </p>
+                    <p>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" required>
+                    </p>
+                    <p>
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" id="edad" min="16" required>
+                    </p>
+
+                </fieldset>
+                <fieldset id="fset02">
+                    <legend> Sexo: </legend>
+                    <input type="radio" name="sexo" id="sexo"><label for="sexo">Hombre</label>
+                    <input type="radio" name="sexo" id="sexo"><label for="sexo">Mujer</label>
+
+                </fieldset>
+                <fieldset>
+                    <legend> Nivel de Estudios </legend>
+                    <p> <input type="radio" name="estudio" id="estudio"><label for="estudio">Graduado escolar</label></p>
+                    <p><input type="radio" name="estudio" id="estudio"><label for="estudio">Graduado en E.S.O.</label></p>
+                    <p><input type="radio" name="estudio" id="estudio"><label for="estudio">Bachiller</label></p>
+                    <p><input type="radio" name="estudio" id="estudio"><label for="estudio">Diplomado</label></p>
+
+                </fieldset>
+                <fieldset>
+                    <legend> Intereses y datos de suscripcion </legend>
+
+                    <h4 class="tit">Temas de  Interes:</h4>
+                    <p><input type="checkbox" name="musica" id="musica" value="musica"><label for="musica">Musica</label></p>
+                    <p><input type="checkbox" name="deporte" id="deporte" value="deporte"><label for="musica">Deporte</label></p>
+                    <p><input type="checkbox" name="cine" id="cine" value="cine"><label for="musica">Cine</label></p>
+
+                    <h4 class="tit">Que dia de la semana:</h4>
+                    <select name="dia" id="dia">
+                        <option value="0">Seleccione Dia...</option>
+                        <option value="LU">Lunes</option>
+                        <option value="MA">Martes</option>
+                        <option value="MI">Miercoles</option>
+                        <option value="JU">Jueves</option>
+                        <option value="Vi">Viernes</option>
+                    </select>
+
+                    <h4 class="tit">Comentarios y opiniones:</h4>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5"> </textarea>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <p>
+                    <button type="submit" id="comprobar">Comprobar Formulario</button>
+                    <button type="reset" id="empezar">Empezar</button>
+                    </p>
+                </fieldset>
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

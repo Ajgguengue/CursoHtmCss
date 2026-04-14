@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mi página</title>
+		<meta charset="UTF-8">
+		<style>
+			*{
+				border: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				-box-sizing: content-box;
+				border: 1px solid;
+			}
+		
+			div{margin:5px; border:5px solid green;background:pink;}
+			h1,p{font-family:verdana,serif;color: blue;}
+			p{text-align:justify;}
+			a{font-size:20px; color: antiquewhite; text-decoration: none; margin-left: 20px; margin-right: 20px;}
+			a:hover{font-size:20px; color:orange}
+			h1, p , a{padding:5px; }
+
+			header{
+				background-color: brown;
+				height: 70px;
+			}
+			nav{
+				display:flex;
+				flex-direction:row;
+				justify-content: space-between;
+				
+				color: rgb(226, 202, 170);
+				background-color: rgb(22, 22, 75);
+				height: 40px;
+			}
+			#titulo1{
+				width: 50%;
+				margin: auto;
+				color: bisque;
+				text-align: center;
+			}
+			main{
+				height: 470px;
+				border: 1px solid;
+				display: flex;
+
+			}
+			#info{
+				width: 40%;
+				height: 450px;
+				-float: left;
+			}
+			#descrip{
+				width: 100%;
+				height: 450px;
+				display: flex;
+				justify-content: center;
+				overflow: hidden;
+
+			}
+
+			footer{
+				
+				height: 70px;
+				background-color: brown;
+				display: flex;
+
+			}
+			img{
+				width: 400px;
+				
+				border: 1px solid;
+				margin: 20px;
+				
+			}
+		
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="titulo1">Calzado de Calidad</h1>
+		</header>
+		<nav>
+			<a href="">Nuestro Calazado</a> 
+			<a href="">Novedades proxima Temporada</a>
+			<a href="">Realizar Pedido</a>
+		</nav>
+		
+		<main>
+		<!-- <div>
+			<p>Tenemos lo siguiente:</p>
+			<p>Sandalias</p>
+		</div>	 -->
+		<div id="info">
+			<p>
+				Nuestro productos son los mejores para andar comodo la mejor moda de zapatos
+				Gustan y tienes descuentos
+				Tambien en la tienda hay mejores precios muchas marcas, tayas y ofertas.
+			</p>
+			
+		</div>
+		<div id="descrip">
+		<img src = "3483cdr23.jpg" alt="imagens sandalia" title="sandalia"><br>
+			<img src = "fotos1.jpg" alt="entrada tienda calzado calidad" title="Calzado Calidad"><br>			
+		</div>
+			
+		</main>
+		<footer>
+			<a href = "pagina2.html" title="pagina de contacto">Contactanos.</a><br>
+			<a href = "archivo3.html" title="ver catalago">Catalago.</a><br>
+		</footer>
+	</body>
+	
+</html>

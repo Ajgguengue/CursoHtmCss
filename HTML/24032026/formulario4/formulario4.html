@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <style>
+        *{border: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;}
+        #centro{
+            width: 70%;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        #div_form{
+            border: 2px solid;
+            margin: 10px;
+            -padding: 10px;
+        }
+        form, fieldset{border: 1px solid red; margin: 10px; padding: 10px; box-shadow: 3px 3px 2px ;}
+        #datos_entrega #dcampo{
+            float: left;
+            font-weight: bold;
+
+        }
+        textarea{
+            resize: none;
+        }
+        .derecha{
+            float: left;
+        }
+        .izquierda{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="centrar">
+        <header>
+            <h1>Pizzeria Las 4 Estaciones - Formulario de Pedido</h1>
+        </header>
+        <main>
+            <div id="centro">
+                <div id="div_form">
+                    <h1>Metodo Pago</h1>
+                    <form action="" id="form1" enctype="" name="form1_pago">
+                        <fieldset>
+                            <legend>La Pizza</legend>
+
+                            <h3>Ingredientes:</h3>    
+                             <div id="dcampo">
+                                <input type="checkbox" id="queso" name="queso" form="form1_pago">
+                                <label for="queso">
+                                    Queso
+                                </label>
+                            </div>
+                            <div id="dcampo">
+                                <input type="checkbox" id="pimiento" name="pimiento" form="form1_pago">
+                                <label for="pimiento">                                    
+                                    Pimiento
+                                </label>
+                            </div>
+                            <div id="dcampo">
+                                    <input type="checkbox" id="cebolla" name="cebolla" form="form1_pago">
+                                <label for="cebolla">
+                                    Cebolla
+                                </label>
+                            </div>
+
+                            <h3>Tamaño:</h3> 
+                            <div id="dcampo">
+
+                                <input type="radio" name="tamano" id="tamano" value="G">
+                                <label for="tamano">
+                                     Grande     
+                                </label>
+                                 <br>   
+                                <input type="radio" name="tamano" value="M">  
+                                <label for="tamano">
+                                    Mediano                                    
+                                </label>
+                                
+                            </div>
+                            <br>
+
+                        </fieldset>
+                        <fieldset id="datos_entrega">
+                            <legend>Datos de Entrega</legend>
+                             <div id="dcampo">
+
+                                <label for="nombre">
+                                    Nombre:
+                                </label>
+                                    <input type="text" id="nombre" name="nombre" form="form1_pago">
+                                
+                            </div>
+                            <div id="dcampo">
+
+                                <label for="direccion">
+                                    Direccion:
+                                </label>
+                                    <input type="text" id="direccion" name="direccion" form="form1_pago">
+                                
+                            </div>
+                            <div id="dcampo">
+
+                                <label for="telefono">
+                                    Telefono:
+                                </label>
+                                    <input type="text" id="telefono" name="telefono" form="form1_pago">
+                                
+                            </div>
+
+                            <div id="dcampo">
+
+                                <label for="instruc">
+                                    Instrucciones especiales:
+                                </label>    <br>
+                                <textarea name="instruc" id="instruc" form="form1_pago" cols="50" rows="6" placeholder="indique datos mas especificos"></textarea>
+                                
+                            </div>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Cofirmacion de Pedido y Pago</legend>
+                             <div id="dcampo" class="derecha">
+                            <select name="mpago" id="mpago">
+                                <option value="1">Efectivo</option>
+                                <option value="1">Tarjeta</option>
+                                <option value="1">Bizum</option>
+                            </select>
+                            </div>
+
+                            <div id="dcampo" class="izquierda">
+                                <button type="button" id="btn_pago" > Realizar Pedido</button>
+                            </div>
+                            
+                        </fieldset>
+
+
+
+    </div>
+    
+</body>
+</html>

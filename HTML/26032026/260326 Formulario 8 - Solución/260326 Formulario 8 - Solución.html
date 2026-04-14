@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Formulario 8</title>		
+		<link rel="stylesheet" href="css/estilos-formulario8.css">
+	<body>
+
+		<h1>Cita Previa - Insalud</h1>
+		
+		<div id="contenedor">
+		
+		<form action="" method="post" name="Formulario 1" id="f1">
+		
+			<fieldset>
+			
+			<legend>Datos de la Cita.</legend>
+			
+			<div id ="cita">
+				
+					<div>
+						<p>
+							<label>Prestaciones del Centro de Salud:</label>
+							<input type="text" list="servicios">
+						</p>
+					</div>
+						
+					<datalist id= "servicios">
+					
+						<option>Medicina General</option>
+						<option>Especialista</option>
+						<option>Enfermería</option>
+						<option>Pediatría</option>
+						<option>Vacunación</option>
+						
+					</datalist>
+			
+					<div>
+						<p>
+							<label>Seleccione una fecha para la cita:</label>
+							<input type = "date" name ="fecha_cita" required>
+						</p>
+					</div>
+					<div>
+						<p>
+							<label>Seleccione hora aproximada de la cita: </label>
+							<input type = "time" name ="hora_cita" required>
+						</p>
+					</div>
+					<div>
+						<p>
+							<label>Seleccione color de ojos del profesional que quiere que le atienda: </label>
+							<input type = "color" name ="color_ojos" value="#ff0000" required>
+						</p>
+					</div>
+				
+			</fieldset>
+			
+			<fieldset>
+			
+			<legend>Datos de Afiliación a la Seguridad Social.</legend>
+			
+				<div id ="datos">
+					<div>
+						<p>
+							<label>Nº Seguridad Social: </label>
+							<input type = "text" name ="nºss" size = "20" required>
+						</p>
+					</div>
+					
+					<div>
+						<p>
+							<label>Nombre:</label>
+							<input type = "text" name ="nombre" size = "55" required>
+						</p>
+
+					<div>
+						<p>
+							<label>Apellidos:</label>
+							<input type = "text" name ="apellidos" size = "55" required>
+						</label>		
+					</p>
+					</div>
+					<div>
+						<p>
+							<label>Dirección: </label>
+							<input type = "text" name ="nombre" size = "55" required>
+						</p>
+					</p>
+					</div>
+					<div>
+						<p>
+							<label>Teléfono: </label>
+							<input type = "tel" name ="telf" size = "10" required>
+						</p>
+					</div>
+				</div>
+				
+			</fieldset>
+			
+			<fieldset>
+			
+			<legend>Datos Adicionales:</legend>
+			
+				<div id ="adicional">
+					<div>
+						<p>
+							<label>Correo Electrónico:</label>
+							<input type = "email" name ="correo_e" size = "60" required>
+						</p>
+					</p>
+					</div>
+					<div>
+						<p>
+							<label>¿Cúal es su Edad?:</label>
+							<input type = "number" name ="edad" max="120" min="18" required>
+						</p>
+					</p>
+					</div>
+				</div>	
+					<div>
+						<p>
+							<label>Si ya ha sido antendido con anterioridad, señale cúal su grado de satisfacción con el servicio: </label>
+						</p>
+					</div>
+					<div id="opciones">
+						<input class="radio" type = "radio" name = "satisf" >Malo
+						<input class="radio" type = "radio" name = "satisf" >Regular
+						<input class="radio" type = "radio" name = "satisf" >Bueno
+						<input class="radio" type = "radio" name = "satisf" >Muy bueno
+					</div>	
+				
+			</fieldset>
+			<fieldset>	
+			
+				<p>
+					<input id="solicitar" type="submit" value="Solicitar Cita">
+					<input id ="limpiar" type="reset" value="Limpiar y Completar de Nuevo">
+				</p>	
+			
+			</fieldset>	
+			
+		</form>
+		
+		</div>
+	</body>
+ </html>

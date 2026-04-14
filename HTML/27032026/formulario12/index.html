@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maquetación con Contenedores Semánticos</title>
+		<link rel="stylesheet" href="estilos/estilo_pagina.css">
+        <style>
+			@import url(estilos/estilo_parrafos.css);
+
+             header{
+                height: 70px;
+                
+            }
+            /*
+			nav{
+				border: 1px solid;
+				text-align: center;
+				background-color: azure;
+				-width: calc(100% - 40%);
+				width: 50%;
+                float:right;
+                
+				-position: relative;
+				-left: calc(10%/2);
+				margin: 10px;
+				vertical-align: middle;
+				-margin-top: 40px;
+			}
+			
+			nav ul li{
+				padding-left: 0px;
+				display: inline;	
+				margin: 5px;
+			}
+
+			-header img {
+				float: left;
+				-display: inline-block;
+				-border: 1px solid;
+				width: 90px;
+
+				margin: 5px;
+				
+				
+			}
+
+			-header h1 {
+				-float: left;
+				-display: inline-bl;
+				-border: 1px solid;
+				text-align: center;
+				margin-top: 20px;
+			} */
+
+			main{
+				width: 70%;
+				border: 1px solid;
+				height: 600px;
+				-display: inline-block ;
+				float: left;
+				box-sizing: border-box;
+				margin: 5px;
+			}
+			aside{
+				width: 27%;
+				border: 1px solid;
+				float: right;
+				box-sizing: border-box;
+				margin-right: 5px;
+				
+			}
+
+			#lateral1{
+				height: 150px;
+				-display: inline-block ;
+				margin-top: 5px;
+				
+			}
+			#lateral2{
+				margin-top: 10px;
+				height: 440px;
+				-display: inline-block ;
+				
+			}
+			footer{
+				
+				clear: both;
+			}
+
+            header #titulo_tienda{
+                float: left;
+                width: 50%;
+                -height: 100px;
+                margin-top: 12px;
+
+                text-align: center;
+
+                
+            }
+
+            header nav{
+                float: right;
+                width: 50%;
+                -height: 100px;
+                margin-top: 22px;
+                
+                text-align: center;
+            }
+            nav ul {
+				list-style: none;
+				list-style-type: none;
+				
+                
+			}
+            nav ul li {
+                display: inline;	
+				margin: 5px;
+
+            }
+
+
+
+		
+			
+          
+        </style>
+    </head>
+    <body>
+    <div id="contenedor">
+	
+        <header>
+			<!-- <img src="imagenes/logo.png"> -->
+			<h1 id="titulo_tienda"> MI TIENDA</h1>	
+			<nav>
+				<ul> 
+					<li><a href="paginas/iniciar.html">Inicio</a></li>
+					<!-- <li><a href="#">Productos</a></li>
+					<li><a href="#">Novedades</a></li>
+					<li><a href="#">Contacto</a></li> -->
+					<li><a href="paginas/registrar.html">Registro</a></li>
+					<li><a href="#">Ayuda</a></li>
+				</ul>
+		</nav>
+
+			
+		</header>
+		
+		
+        <main>
+				
+		</main>
+
+        <aside id="lateral1">
+				
+		</aside>
+		<aside id="lateral2">
+				
+		</aside>
+			
+     
+        <footer>
+			
+		</footer>
+    </div>
+    </body>
+</html>

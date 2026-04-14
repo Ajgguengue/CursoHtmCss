@@ -1,0 +1,47 @@
+
+
+	/* Hoja de estilos para la página iniciar.html del Formulario 12. */
+	
+			*{font-family:sans-serif;}
+			
+			#contenedor{
+				display:flex;
+				justify-content:center;
+			}
+			fieldset{
+				border:2px solid maroon;
+				background:#ddd;
+				box-shadow: 5px 5px 2px #333;
+				border-radius:5px;
+			}
+			
+			#f12i div{
+				width:400px;
+			}
+		
+			#f12i div p label{
+				width:40%;
+				float:left;
+			}
+			h1{
+				text-align:center;
+			}
+			
+			#boton{
+				display:flex;
+				justify-content:center;
+			}
+			
+			#b1{
+				font-size:16px;
+				color:maroon;
+				font-weight:bold;
+			}
+			a:link,a:visited,a:active{
+				text-decoration:none;
+				color:maroon;
+				font-weight:bold;
+				font-size:18px;
+			}
+			
+		

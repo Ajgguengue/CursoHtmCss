@@ -1,0 +1,18 @@
+* {
+    color: #00FF00;
+    background-color: #F500A7;
+}
+
+ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+ul li:nth-child(2)::after{
+    content: " Deuteranopia dificultad ";
+}
+
+#mensage::after{
+    content: " longitudes de onda media (verde) ";
+}
+
+

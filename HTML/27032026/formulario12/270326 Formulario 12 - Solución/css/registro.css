@@ -1,0 +1,59 @@
+			
+	/* Hoja de estilos para la página registro.html del Formulario 12. */
+			
+			
+		*{
+			font-family:sans-serif;
+			background-color:#ddd;
+		}
+		#contenedor{
+			width:45%;
+			margin:auto;
+		}
+		#d0{
+			border-left:5px solid black;
+			border-right:5px solid black;
+		}
+		.borde{
+			border:1px solid black;
+			border-radius:5px;
+			padding:5px;
+		}
+		input{
+			border-width:0px;
+		}
+		
+		#d1,#d2,#d3{
+			display:flex;
+			justify-content:space-between;
+			gap:5px;
+		}
+		#cp,#numero,#tel{
+			flex-basis:40%;
+		}
+		#ciudad,#calle,#correo{
+			flex-basis:60%;
+		}
+		/*#navegar{
+			display:flex;
+			justify-content:space-between;
+		}*/
+		#atras{
+			float: left; /* No necesario con flex.*/
+		}
+		#adelante{
+			float: right; /* No necesario con flex.*/
+		}
+		a:link,a:visited,a:active{
+			text-decoration:none;
+			color:maroon;
+			font-weight:bold;
+			font-size:18px;
+		}
+		fieldset{
+			border-radius:5px;
+		}
+		
+			
+			
+		

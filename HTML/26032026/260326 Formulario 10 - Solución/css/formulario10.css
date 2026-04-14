@@ -1,0 +1,17 @@
+			
+			/* Estilos para Formulario 10.*/
+			
+			body{font-family:calibri, sans-serif;}
+			#div0{width:35%;margin:auto;padding:30px;border-radius:5px;background-color:#ddd;}
+			h3{font-weight:bold;}
+			div p label{width: 35%;float:left;}
+			label{margin-left:70px;}
+			#enviar{font-size:16px;color:navy;}
+			#pboton{text-align:center;}
+
+			-input:valid,-textarea:valid{border:2px solid blue;}
+			-input:invalid,-textarea:invalid{border:2px dotted red;}
+			-#edad:out-of-range{background-color:#f00;}
+			input:required, textarea:required{border:1px solid red;}
+			-#fecha:out-of-range{color:maroon; font-weight:bold;}
+		

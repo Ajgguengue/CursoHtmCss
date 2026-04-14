@@ -1,0 +1,43 @@
+
+	/* Hoja de estilos para la página index.html del Formulario 12. */
+
+		*{
+			margin:0px;
+			padding:0px;
+			font-family:sans-serif;
+			background-color:#ddd;
+		}
+		header{
+				
+			/*display:flex;
+			justify-content:space-around;
+			align-items:center;*/
+			height:100px;
+		}
+		nav{
+			
+			float:right; /* No necesario con flex.*/
+			margin-top: 30px; /* No necesario con flex.*/
+			margin-right: 100px; /* No necesario con flex.*/
+			/*display:flex;*/
+			/*gap:40px;*/
+		}
+		h1,a,nav,header{
+			background-color:maroon;
+		}
+		a{/* No necesario con flex.*/
+			margin: 0px 20px;
+		} 
+		h1{
+			float:left; /* No necesario con flex.*/
+			margin-top: 20px; /* No necesario con flex.*/
+			margin-left: 200px; /* No necesario con flex.*/
+			font-size:50px;
+			color:orange;
+		}
+		a:link,a:visited,a:active{
+			text-decoration:none;
+			font-size:28px;
+			color:gold;
+		}
+		

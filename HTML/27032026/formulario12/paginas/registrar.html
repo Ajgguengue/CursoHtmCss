@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Login</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            -background-color: 
+            font-family: sans-serif;
+        }
+        #centro{
+            width: 80%;
+            margin: auto;
+            -border: 1px solid rgb(19, 85, 226);
+        }
+        h3{
+            -border: 1px solid rgb(19, 85, 226);
+            text-align: center;
+        }
+        form {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(206, 184, 184);
+            border: 1px solid rgb(143, 170, 228);
+            border-radius: 15px;
+            box-shadow: 2px 2px ;
+        }
+        fieldset{
+            border: 2px solid rgb(228, 221, 221);
+            border-radius: 5px;
+            margin: 5px;
+            padding: 10px;
+
+
+        }
+        fieldset:hover{
+            border: 2px solid rgb(37, 34, 34);
+            box-shadow: 2px 2px 2px;
+      
+
+
+        }
+
+
+       
+        #d_campo label {
+
+        /* .campos label { */
+            -border: 1px solid;
+            
+            -height: 16px;
+            -width: 130px;
+            width: 37%;
+            -margin: auto 5px;
+            display: inline-block;
+            -display: block;
+            -display: inline;
+            -float: left;
+
+            
+
+        }
+        .campos label{
+            font-weight: bold;
+        }
+
+        
+        input{
+            border-width: 0px;
+            background-color: rgb(247, 201, 150);
+
+        }
+         
+         
+
+        /* #d_campo #l_postal{
+            -display: inline;
+            -display: block;
+            -float: left;
+
+            width: 25%;
+            border: 1px solid red;
+
+            
+        }
+        #d_campo #l_ciudad{
+            -display: inline;
+            -display: block;
+            -float: left;
+            width: 15%;
+            border: 1px solid red;
+
+            
+        } 
+        -#d_campo_corto label {
+            border: 1px solid;
+            -float: left;
+            -width: 57%;
+            margin: auto 5px;
+            -display: inline;
+
+        }
+        -#d_campo_corto input {
+            border: 1px solid;
+            -float: left;
+            -width: 50%;
+            margin: auto 5px;
+            -display: inline;
+
+        }    
+            -#d_campo {
+            border: 1px solid rgb(71, 66, 66);
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px;
+            padding: 5px;
+
+
+        }
+        
+        */
+        
+
+
+        .campos{
+            display: inline-block;
+            width: 100%;
+            
+            border: 1px solid rgb(71, 66, 66);
+            -margin: 0px;
+            -margin: 10px;
+            margin: 5px auto;
+            border-radius: 5px;
+            box-shadow: 1px 1px;
+            overflow: hidden;
+            padding: 5px;
+            
+            box-sizing: border-box;
+
+        }
+
+        #dos{
+            border: 1px solid blue;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            -display: inline;
+            -display: inline-block;
+            -display: block;
+            -float: left;
+        }
+        /**/
+        #d_campo_corto_postal{
+            display: inline-block;
+            width: 40%;
+            overflow: hidden;
+
+
+        }
+        #d_campo_corto_ciudad{
+            -display: inline-block;
+            width: 59%;
+            -overflow: hidden;
+        }
+        
+
+        #d_campo_corto_calle{
+            -display: inline-block;
+            width: 66%;
+            overflow: hidden;
+            
+            
+        }
+
+         #d_campo_corto_numero{
+            -display: inline-block;
+            width: 33%;
+            overflow: hidden;
+        }
+            
+
+
+        #d_campo_corto_telefono{
+            display: inline-block;
+            width: 33%;
+            overflow: hidden;
+        }
+
+        #d_campo_corto_correo{
+            display: inline-block;
+            -display: inline;
+            width:66%;
+            overflow: hidden; 
+        }
+
+        #d_boton #atras{
+            float: left;
+        }
+        #d_boton #continuar{
+            float: right;
+        }
+        /* validaciones css */
+
+        input:valid{border:1px solid rgb(1, 221, 93);}
+    	input:invalid {border:2px dotted red;}
+	    
+		-input:required {border:1px solid red;}
+		
+
+       
+        
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="centro">
+        <h3>Datos del Usuario / Cliente</h3>
+        <form action="" name="login" method="post">
+            <fieldset>
+                <div id="d_campo" class="campos">
+                    <label for="usuario">
+                        Usuario / Login:
+                    </label>
+                    <input type="text" name="usuario" id="usuario" required>
+                </div>
+                <div id="d_campo" class="campos">
+                    <label for="contrasena">
+                        Contraseña: 
+                    </label>
+                    <input type="password" name="contrasena" id="contrasena" required>
+                </div>
+                <div id="d_campo" class="campos">
+                    <label for="contrasena">
+                        Confirmar Contraseña: 
+                    </label>
+                    <input type="password" name="re_contrasena" id="re_contrasena" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div id="d_campo" class="campos">
+                    <label for="dni">
+                        DNI / NIF:
+                    </label>
+                    <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Z]{1}" required>
+                </div>
+                <div id="d_campo" class="campos">
+                    <label for="nombres">
+                        Nombres: 
+                    </label>
+                    <input type="text" name="nombres" id="nombres" maxlength="50" required>
+                </div>
+                <div id="d_campo" class="campos">
+                    <label for="apellido">
+                        Apellidos: 
+                    </label>
+                    <input type="text" name="apellido" id="apellido" maxlength="50" required>
+                </div>
+                
+                <div id="dos">
+                    <div id="d_campo_corto_postal" class="campos">
+                        <label for="postal" id="l_postal">
+                            Codigo Postal: 
+                        </label>
+                        <!-- <input type="number"  name="postal" id="postal" size="5" max="3500"  required> -->                    
+                        <input type="text" pattern ="[0-9]{5}" size="5" id="postal">
+                    </div>
+
+                   <div id="d_campo_corto_ciudad" class="campos">
+                        <label for="ciudad" id="l_ciudad">
+                            Ciudad:             
+                        </label>
+                        <input type="text"  name="ciudad" id="ciudad" size="25"  required>
+                    </div>
+                </div>
+                <div id="dos">
+                    <div id="d_campo_corto_calle" class="campos">
+                        <label for="calle" id="l_calle">
+                            Calle: 
+                        </label>
+  
+                        <input type="text"  size="25" id="calle">
+                    </div>
+                
+                   <div id="d_campo_corto_numero" class="campos">
+                        <label for="numero" id="l_numero">
+                            Número: 
+                        </label>
+                        <input type="text" name="numero" id="numero" pattern="\d{1,4}" size="4"required>
+                    </div>
+                </div>
+
+                <div id="dos">
+                    <div id="d_campo_corto_telefono" class="campos">
+                        <label for="telefono" id="l_telefono">
+                            Telefono: 
+                        </label>
+                        <input type="tel" id="telefono" size="10" pattern="[0-9]{9}">
+                    </div>
+                
+                   <div id="d_campo_corto_correo" class="campos">
+                        <label for="correo" id="l_correo">
+                            Correo Electronico: 
+                        </label>
+                        <input type="email"  name="correo" id="correo" size="35" required>
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset>
+
+
+
+                
+                <div id="d_boton">                    
+                    <a href="../index.html" id="atras">Atrás</a>
+                    <a href="#" id="continuar">Continuar</a>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
